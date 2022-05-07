@@ -9,5 +9,12 @@ Welcome to poption's documentation!
 .. toctree::
    :maxdepth: 1
 
-   pick_contract
    leverage
+   impermanent_loss
+   sell
+   trade
+
+   poption_contract
+
+   il_math
+   il_calculator
