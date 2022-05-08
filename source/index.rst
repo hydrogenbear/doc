@@ -10,7 +10,7 @@
    :maxdepth: 1
 
    leverage
-   impermanent_loss
+   hedge_il
    sell
    trade
    liquidity_pool
