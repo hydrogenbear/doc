@@ -1,7 +1,7 @@
 poption合约
 ================
 
-在进行poption交易之前需要先选择合约。合适的合约能提供我们需要的金融服务，因此对合约有个全面了解对我们非常重要。
+合适的合约能提供我们需要的金融服务，对 poption 合约有个全面了解对使用 poption 交易非常重要。
 
 Poption的属性
 ------------------------
@@ -9,27 +9,24 @@ Potpion智能中有三个重要属性，预言机、底层资产类型、到期�
 
 Poption 的收益函数
 ------------------
-Poption的收益函数代表着poption持有人在智能合约中所拥有的资产。它的输入是结算价格，它的输出是持有人在poption到期时应收到的标的资产数量。持有的收益函数越大，在到期时所能获得的资产越多。Poption的收益函数以ERC1155结余（balance）的形式储存在智能合约中。持有人可以在poption合约的操作界面中查看自己持有的payoff。如下图所示：
+Poption的收益函数代表着poption持有人在智能合约中所拥有的资产。它的输入是结算价格，它的输出是持有人在poption到期时应收到的标的资产数量。持有的收益函数越大，在到期时所能获得的资产越多。在 poption 中所有的收益函数都会被看作是 2 个梯形和 N-2 个三角形的组合。
 
-.. _bull-spread-exp:
+比如通过一个单位的底层资产铸造的常数收益会被切分成如下形状：
 
-.. figure:: ../images/balance.png
-    :alt: balance
+.. image:: ../images/poption_token_split_unit.png
     :align: center
 
-    一个账户中的牛市价差期权
+比如一个对冲无常损失的收益会被切分成如下形状：
 
-Poption持有人也可以在Etherscan（Polygonscan）中查看相应的信息。更详细的方法可以在 :ref:`payoff_detail` 找到。
+.. image:: ../images/poption_token_split_il.png
+    :align: center
 
-铸造/燃烧
-----------------
-任何人都可以通过将底层资产锁定到 popion 合约中来铸造 popion。 从 1 个单位的底层资产中可以铸造出收益始终为 1 的poption。 持有人也可以烧掉他恒定收益的poption，以赎回相同数量的底层资产。
+这些三角形和梯形可以独立地代表不同的收益，以下是一系列单位高度的这些三角形和梯形的收益曲线：
 
-.. _payoff_detail:
+.. image:: ../images/poption_token_unit.png
+    :align: center
 
-收益函数的具体实现
--------------------
-通过了解poption智能合约中收益函数的具体实现能更进一步的了解poption的特性。在poption中我们使用分段线性函数来描述收益函数。具体函数如下：
+然后我们将这些独立的梯形和三角形视为令牌。我们的 poption 合约也是一个 ERC1155 合约，它能将这些三角形和梯形的高以令牌的结余信息的形式储存在智能合约中。这样我们就可以将不同的收益函数转化成统一的便于定价和交易的令牌，我们把这些代表收益的令牌叫做收益令牌，一个Poption合约中会有N个不同的收益令牌，N是一个常数，当前大多数的 poption 合约的 N 为 16。收益和收益令牌结余  :math:`balance_i` 的关系以如下方式严格定义。在该定义下，在行权时，当结算价格为 :math:`slot_i` 的时候，持有人总能得到 :math:`balance_i` 的底层资产：
 
 .. math::
     f(x) = \begin{cases} balance_0 & x < slot_0 \\
@@ -37,34 +34,17 @@ Poption持有人也可以在Etherscan（Polygonscan）中查看相应的信息�
     balance_{N-1} & x \geq slot_{N-1} \\
     \dfrac{slot_{i+1} - x}{slot_{i+1} - slot_{i}}  balance_{i} + \dfrac{x - slot_{i}}{slot_{i+1} - slot_{i}}  balance_{i+1} & slot_{i} \leq x < slot_{i+1}  \end{cases}
 
-其中 :math:`slot_i` 是关键点（分段线性函数中的线段端点）的价格，它被储存在合约的 ``slots`` 变量中。 :math:`balance_i` 是poption持有人在关键点价格上的收益，它以ERC1155的形式储存在合约中。可以通过 ``balanceOf`` 方法查询。在行权时，当结算价格为 :math:`slot_i` 的时候，持有人能得到 :math:`balance_i` 的底层资产。
+其中 :math:`slot_i` 是梯形和三角形顶点的x坐标（价格），它被储存在合约的 ``slots`` 变量中，且一旦初始化就无法被改变的。
 
-在了解了收益函数的具体实现后我们也可以在Etherscan中查看代表收益函数的ERC1155 token。如 `https://polygonscan.com/token/<poption_address>?a=<holder_address> <https://polygonscan.com/token/0xD6Dcb2eE2D996620c8CC948f5425C223792eDF9d?a=0xfdd6a9c9201c36b6f9c9533a8859818dde6c9a72#inventory>`_ 。
+我们可以在Etherscan中查看在poption中持有的收益令牌结余。如 `https://polygonscan.com/token/<poption_address>?a=<holder_address> <https://polygonscan.com/token/0xD6Dcb2eE2D996620c8CC948f5425C223792eDF9d?a=0xfdd6a9c9201c36b6f9c9533a8859818dde6c9a72#inventory>`_ 。
 
-一个例子
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-以下是一个近似对冲无常损失的例子。
-其中的slot是 ::
-
-    [2450, 2600, 2750, 2900, 3050,
-    3200, 3350, 3500, 3650, 3800,
-    3950, 4100, 4250, 4400, 4550, 4700]
-
-balance 是 ::
-
-    [93.37981426, 66.7587484 , 45.163177  , 28.18707117, 15.47629892,
-    6.71978773,  1.64253269,  0.        ,  1.57359974,  6.16698848,
-    13.60302297, 23.72123005, 36.37568973, 51.43325186, 68.77202431, 88.28008373]
-
-相应的曲线图像则是
-
-.. image:: ../images/il_payoff.png
-    :align: center
-    :width: 80 %
+铸造/燃烧
+----------------
+任何人都可以通过将底层资产锁定到 popion 合约中来铸造 popion。 从 1 个单位的底层资产中可以铸造出收益始终为 1 的 poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以烧掉他恒定收益的 poption，以赎回相同数量的底层资产。
 
 移交
 --------
-Poption 收益作为一种ERC1155是可以被移交的。在移交的功能的基础上我们可以构建自动做市商。
+收益令牌作为一种ERC1155是可以被移交的。在移交的功能的基础上我们可以构建自动做市商。
 
 前端界面
 --------
@@ -86,13 +66,13 @@ Poption 收益作为一种ERC1155是可以被移交的。在移交的功能的�
 
 收益函数相关
 ~~~~~~~~~~~~~~
-在Swap功能页面中上部分有一个balance图表：
+在Swap功能页面中上部分有一个balance图表，它代表了用户持有的收益曲线：
 
 .. figure:: ../images/balance.png
     :alt: balance
     :align: center
 
-在Swap功能页面最下方 Detail 栏中有一个查看每个插槽状态的地方：
+在Swap功能页面最下方 Detail 栏中可以查看每个收益令牌的详细信息：
 
 .. figure:: ../images/balance_1.png
     :alt: balance
