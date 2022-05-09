@@ -13,7 +13,7 @@
 .. image:: ../images/payoff_l_0.png
     :align: center
 
-我们看到这个收益曲线中有负的一部分，这是因为当资产价格下跌后我们持有的资产的价值就会低于借入的资金价值。这个时候我们就没法还清全部的借款了，券商可不希望这样，他要确保自己能收到还款。因此此时我们就会收到追缴保证金通知或者更进一步的，被清仓。但其实我们并不希望欠券商钱或者被强制交易不是么？那么我们应该把这部分风险转移出去。我们可以通过购买 `看跌期权来 <https://www.cmegroup.com/cn-s/education/learn-about-trading/courses/introduction-to-options/explaining-put-options-short-and-long.html>`_ 做到这一点。看空期权的收益曲线长这样。
+我们看到这个收益曲线中有负的一部分，这是因为当资产价格下跌后我们持有的资产的价值就会低于借入的资金价值。这个时候我们就没法还清全部的借款了，券商可不希望这样，他要确保自己能收到还款。因此此时我们就会收到追缴保证金通知或者更进一步的，被清仓。但其实我们并不希望欠券商钱或者被强制交易不是么？那么我们应该把这部分风险转移出去。我们可以通过购买 `看跌期权来 <https://www.cmegroup.com/cn-s/education/learn-about-trading/courses/introduction-to-options/explaining-put-options-short-and-long.html>`_ 做到这一点。看跌期权的收益曲线长这样。
 
 .. image:: ../images/payoff_l_1.png
     :align: center
