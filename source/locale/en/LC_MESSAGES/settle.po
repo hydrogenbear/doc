@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, poption.org
+# This file is distributed under the same license as the poption package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poption \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-11 14:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/settle.rst:4
+msgid "行权/结算"
+msgstr ""
+
+#: ../../source/settle.rst:6
+msgid ""
+"当poption到期后，我们可以结算界面进行结算。对于普通poption持有者来说，结算poption会直接销毁poption中最终命中结算价格的收益令牌，并将对应的收益转给poption持有者。对于同时持有poption"
+" 收益令牌和poption "
+"流动性令牌的用户来说。poption会先撤出投资者流动性池中的poption，销毁流动性令牌并转化收益令牌。之后再像普通poption持有这那样结算poption收益。操作界面如下所示："
+msgstr ""
+
+#: ../../source/settle.rst:12
+msgid "(这里的时间有些奇怪是因为使用了测试环境。)"
+msgstr ""
+
+#: ../../source/settle.rst:14
+msgid ""
+"具体的收益结算细节可以参考 :ref:`poption_contract` 和 `白皮书 "
+"<https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_ 。"
+msgstr ""
+
