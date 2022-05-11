@@ -1,3 +1,5 @@
+.. _settle:
+
 行权/结算
 ===============
 
@@ -6,4 +8,7 @@
 
 .. image:: ../images/settle.png
     :align: center
+
 (这里的时间有些奇怪是因为使用了测试环境。)
+
+具体的收益结算细节可以参考 :ref:`poption_contract` 和 `白皮书 <https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_ 。

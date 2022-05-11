@@ -65,7 +65,7 @@ poption 收益曲线，红线是我们需要支付的成本。当价格为 0.9 �
 .. image:: ../images/trade_0.png
     :align: center
 
-我们可以选择支付底层资产或同样的poption 收益去完成这次交易，App会优先使用投资者账户中的poption，如果poption不足，投资者则需要支付相应的底层资产。在这个例子中，账户内并没有poption， 所以这次交易全部使用USDC支付，这显示在最下方的To Mint信息中，To Mint的价值等于等价成本。请参考 :ref:`trade_tool` 了解更多相关信息。
+我们可以选择支付底层资产或同样的poption 收益去完成这次交易，App会优先使用投资者账户中的poption，如果poption不足，投资者则需要支付相应的底层资产。在这个例子中，账户内并没有poption， 所以这次交易全部使用USDC支付，这显示在最下方的To Mint信息中。在这里To Mint的价值等于等价成本。请参考 :ref:`trade_tool` 了解更多相关信息。
 
 讨论
 -----

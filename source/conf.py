@@ -46,8 +46,10 @@ language = "zh_CN"
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
-# -- Options for HTML output -------------------------------------------------
+locale_dirs = ["locale/"]  # path is example but recommended.
+gettext_compact = False  # optional.
+# --
+# Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
