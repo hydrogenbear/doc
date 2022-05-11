@@ -9,15 +9,27 @@
 Poption 是一种安全通用高效的金融衍生品，专为链上交易设计，是一个完全的分布式金融产品。Poption 能通过区块链为原本无法触及这些服务的用户提供对冲风险，投机交易等多种金融服务。作为一颗小小的种子为全世界金融的自由和平等带来一份力量。
 
 .. toctree::
+   :caption: 操作指南
    :maxdepth: 1
 
+   introduction
    leverage
    hedge_il
    sell
    trade
-   liquidity_pool
-
+   settle
    poption_contract
-
-   il_math
+   any_payoff
+   liquidity_pool
    il_calculator
+
+.. toctree::
+   :caption: 参考文档
+   :maxdepth: 1
+
+   vista
+   il_math
+
+白皮书
+----------------------------------------------------------------------------------------
+* `Poption A General-Purpose Exotic Option Designed For DeFi <https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_
