@@ -23,3 +23,4 @@ poption 的名字来源于 payoff option （收益曲线期权）和 pop option 
    leverage
    hedge_il
    poption_contract
+   settle
