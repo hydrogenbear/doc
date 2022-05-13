@@ -13,20 +13,18 @@ poption 的名字来源于 payoff option （收益曲线期权）和 pop option 
 .. figure:: ../images/il_v2_payoff.png
     :align: center
 
-    :ref:`一个提供对冲ETH-USDC 流动性池无常损失功能的 poption，收益以 USDC 结算<il_hedge_example>`
+    :ref:`一个提供对冲ETH-USDC 流动性池无常损失功能的 poption，收益以 USDC 结算<hedge_il>`
 
 .. figure:: ../images/any_payoff_chart.png
     :align: center
 
     :ref:`一个为了好玩定义正弦函数为收益的 poption，收益以 USDC 结算<sin_payoff>`
 
+
 接下来你可以阅读以下链接了解更多信息：
-
-.. toctree::
-   :maxdepth: 1
-
-   leverage
-   hedge_il
-   any_payoff
-   poption_contract
-   settle
+-----------------------------------------------------------------------
+* :ref:`leverage`
+* :ref:`hedge_il`
+* :ref:`any_payoff`
+* :ref:`poption_contract`
+* :ref:`settle`

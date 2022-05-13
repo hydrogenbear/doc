@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-11 14:34+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Hydrogen Bear <hydrogenbear@poption.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,11 +19,13 @@ msgstr ""
 
 #: ../../source/sell.rst:2
 msgid "沽空poption"
-msgstr ""
+msgstr "short poption"
 
 #: ../../source/sell.rst:4
 msgid "在poption中，对于任意一个可以沽多的收益曲线我们都可以沽空它。简单来说，只要在poption界面中输入一个收益曲线的负值，我们就可以沽空这个收益曲线。"
 msgstr ""
+"We can short a poption as much as we can long it."
+"In poption swap page, enter a negative payoff curve in the poption screen, we can short that yield curve."
 
 #: ../../source/sell.rst:7
 msgid "沽空一个看涨期权"

@@ -41,7 +41,7 @@
 
 现在我们看一个具体的例子。
 
-假设当前 MATIC 兑 USDC 的比例是 1.2:1，我们看涨 MATIC，我们希望在 poption 中以 4 倍杠杆做多 MATIC。我们在 `poption App页面 <https://www.poption.exchange/app/>`_ 中选择 WMATIC/USDC-USDC的poption并点击。如图所示：
+假设当前 MATIC 兑 USDC 的比例是 1.2:1，我们看涨 MATIC，我们希望在 poption 中以 4 倍杠杆做多 MATIC。我们在 `poption App页面 <https://www.poption.exchange/app/>`_ 中选择 WMATIC/USDC-USDC的poption并点击。（阅读 :ref:`poption_contract` 了解更多poption代码的信息。） 如图所示：
 
 .. image:: ../images/apps_2.png
     :align: center

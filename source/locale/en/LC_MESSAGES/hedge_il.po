@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-11 14:34+0800\n"
+"POT-Creation-Date: 2022-05-12 13:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Hydrogen Bear <hydrogenbear@poption.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,27 +19,36 @@ msgstr ""
 
 #: ../../source/hedge_il.rst:4
 msgid "对冲无常损失"
-msgstr ""
+msgstr "Hedge Impermanent Loss"
 
 #: ../../source/hedge_il.rst:6
 msgid ""
-"本文将介绍如何利用 poption "
-"对冲无常损失。在金融市场中，利用衍生品转移风险是常见的做法。当资产价值随某一价格波动产生变化的时候，我们可以购买和这一变化相反收益曲线的衍生品来对冲变化带来的不确定性，规避损失。由于衍生品往往是高资金效率的，持有这样的衍生品往往只占用一小部分资金。"
+"本文将介绍如何利用 poption 对冲 :ref:`无常损失<il_math>` "
+"。在金融市场中，利用衍生品转移风险是常见的做法。当资产价值随某一价格波动产生变化的时候，我们可以购买和这一变化相反收益曲线的衍生品来对冲变化带来的不确定性，规避损失。由于衍生品往往是高资金效率的，持有这样的衍生品往往只占用一小部分资金，所以这样做对稳定收益是十分有意义的。"
 msgstr ""
+"This article will describe how to use poption to hedge against "
+":ref:`impermanent losses<il_math>`. It is common practice to use "
+"derivatives to shift risk in financial markets. We can buy derivatives to"
+" cover our losses elsewhere. Because poption are usually highly capital "
+"efficient, it would not cost much. It would be efficient to hedge loss "
+"via poption."
 
 #: ../../source/hedge_il.rst:10
 msgid "操作"
-msgstr ""
+msgstr "Example"
 
 #: ../../source/hedge_il.rst:12
 msgid "Uniswap v2 或类似流动性池"
-msgstr ""
+msgstr "Uniswap v2 or similar liquidity pool"
 
 #: ../../source/hedge_il.rst:14
 msgid ""
-"现在我们看一个具体的例子。假设我们要对冲的是 ETH-USDC 流动性池中无常损失。 我们在app页面选择 WETH/USDC-"
-"USDC的poption并点击。如图所示："
+"现在我们看一个具体的例子。假设我们要对冲的是 ETH-USDC 流动性池中无常损失。 我们在 `app页面 "
+"<https://www.poption.exchange/app/>`_ 选择 WETH/USDC-USDC的poption并点击。如图所示："
 msgstr ""
+"Suppose we want to hedge against impermanent losses in the ETH-USDC "
+"liquidity pool. Click the WETH/USDC-USDC poption card on the `app page "
+"<https://www.poption.exchange/app/>`_ to enter the swap page."
 
 #: ../../source/hedge_il.rst:19
 msgid ""
@@ -47,18 +56,33 @@ msgid ""
 "poption。右边第二个小工具是无常损失对冲工具。它能自动计算流动性池中的无常损失并给出对冲方案，具体的计算方法可以参考 "
 ":ref:`il_math` 。"
 msgstr ""
+"There are a series of widgets in the swap page to help us generate poption with different payoff to meet different needs."
+"The second widget on the right is the impermanent loss hedging tool. "
+"It automatically calculates the impermanent loss with the liquidity pool information and provides a hedging solution. "
+"Read :ref:`il_math` to learn more."
 
 #: ../../source/hedge_il.rst:21
 msgid ""
 "如果我们需要对冲 Uniswap v2 或类似流动性池。我们直接在USDC "
 "的输入框中输入流动性池中的USDC资产数量就可以了，WETH的资产数量小工具会根据当前价格自动给出。"
 msgstr ""
+"If we want to hedge losses in Uniswap v2 or similar liquidity pools, we can enter the number of USDC assets in the liquidity pool in the input box, "
+"and the WETH's number will be given automatically based on the current price."
 
 #: ../../source/hedge_il.rst:26
 msgid ""
 "点击APPROXIMATE，我们就可以生成一个能够对冲无常损失的poption。我们可以在左侧的收益图中查看这个poption。图中的蓝线是需要对冲的无常损失，绿线是能够买到的poption，红色是需要付出的成本。在一个很大的范围中绿线和蓝线是紧密贴合的。在价格发生剧烈变化的时候，为了防范清算风险，poption不会提供完全的对冲，只能提供部分对冲，因此在图表两侧，绿线停止上升，和蓝线产生差异。关于这部分的解释可以参考"
 " :ref:`leverage` 。"
 msgstr ""
+"Click on APPROXIMATE, and we will generate a poption that can hedge against the impermanent losses."
+"We can view this poption in the payoff chart on the left side. "
+"the blue line in the chart is the impermanent loss that needs to be hedged, "
+"the green line is the payoff of the generated poption, "
+"and the red line is the cost to buy the poption. "
+"The green and blue lines are closely aligned over a wide range. In this range, poption can hedge the risk perfectly. "
+"In cases of a deep change in price, the poption does not provide a full hedge, but only a partial one. So the two lines are separated. "
+"This is because the poption market maker do not want to take that risk which is too risky and too hard to estimate. "
+"Read :ref:`leverage` to learn more about risk shift."
 
 #: ../../source/hedge_il.rst:31
 msgid ""
@@ -66,16 +90,25 @@ msgid ""
 "工具中可以看到这个poption的报价，可以看到相对于流动性池中的资产来说，poption的成本并不高，（约为池中资产的0.085%）。参考 "
 ":ref:`trade_tool` 获取报价和费用的更多信息。"
 msgstr ""
+"Then we can view the quote and other information in the 'TRADE' card on the right side."
+"The cost of the poption is not high compared to the assets in the liquidity pool, "
+"(about 0.085% of the assets in the pool). If the cost is good enough, click 'SWAP' to buy the poption."
+"Refer to :ref:`trade_tool` for more information about quotes and fees."
+
 
 #: ../../source/hedge_il.rst:37
 msgid "Uniswap v3 流动性池"
-msgstr ""
+msgstr "Uniswap v3 liquidity pool"
 
 #: ../../source/hedge_il.rst:38
 msgid ""
 "我们也可以对冲 Uniswap v3 中的无常损失。在小工具中打开 Uniswap v3 "
 "选项，选择价格范围，输入流动性池中的USDC数量，WETH的资产数量小工具会根据当前价格自动给出。"
 msgstr ""
+"We can also hedge against impermanent losses in Uniswap v3. "
+"Hit the Uniswap v3 switch in the widget, set the price range, "
+"enter the number of USDCs in the liquidity pool "
+"and the WETH's number will be given automatically based on the current price."
 
 #: ../../source/hedge_il.rst:44
 msgid ""
@@ -83,46 +116,70 @@ msgid ""
 "的长的差不多，但是左侧的y坐标轴标尺变大了。这是因为 uniswap v3 "
 "有更高的资本效率。同样的资产放入池中会引起更高的无常损失，具体的计算方法可以参考 :ref:`il_math` 。（但同时也能获得更高的收益。）"
 msgstr ""
+"Click on APPROXIMATE, and we will generate a poption that can hedge against the impermanent losses."
+"We can see that the curve shape is about the same as v2's, but the y-axis scale is larger. This is because uniswap v3 has a higher capital efficiency, "
+"The same assets in the pool will cause a higher impermanent loss (and higher earning rate)."
+"Read :ref:`il_math` to learn more."
 
 #: ../../source/hedge_il.rst:49
 msgid ""
 "然后我们在右侧的TRADE 工具中可以看到这个poption的报价，由于对冲了更多的风险，对冲v3 无常损失的poption会比 v2 "
 "情况下的成本更高，但相对来说，仍然是便宜的（约为池中资产的0.8%）："
 msgstr ""
+"Then we can view the quote and other information in the 'TRADE' card on the right side."
+"The cost of the poption is higher than the one in v2 for more risk needs to be hedged against"
+"(about 0.8% of the assets in the pool). If the cost is acceptable, click 'SWAP' to buy the poption."
+
 
 #: ../../source/hedge_il.rst:56
 msgid "讨论"
-msgstr ""
+msgstr "Discussion"
 
 #: ../../source/hedge_il.rst:58
 msgid "在DeFi生态中，不只有poption能提供可以对冲无常损失，也有其他的产品提供类似的服务，那poption和他们之间有什么区别呢？"
 msgstr ""
+"In the Ethereum ecosystem, There is not only poption that offers the ability to hedge against impermanent losses, "
+"but also other products that offer similar services, so what are the advantages of poption over them?"
 
 #: ../../source/hedge_il.rst:60
 msgid ""
 "首先 poption "
 "是一个通用的衍生品产品。用它来对冲损失是直接的简单的，不需要通过合成多种金融产品来实现对冲功能。此外它的通用性决定了它在售出一个对冲产品的同时也售出它的反面，当poption自动做市商将一个对冲无常损失的poption定价过高的时候，投机者可以通过做空这样的poption来获益。这样对于有对冲需求的投资者有两个好处。"
 msgstr ""
+"First of all poption is a general purpose derivative product. "
+"Using it to hedge losses is quite straightforward and simple, without synthesizing multiple financial products to achieve the same goal. "
+"General purpose also means that it accepts long and short at the same time. When a poption auto market maker overprices a poption that hedges an impermanent loss, "
+"speculators can benefit from shorting such a poption. This also bring two benefits to the hedger."
 
 #: ../../source/hedge_il.rst:62
 msgid ""
 "对冲无常损失的poption价格必须是公允的，流动性池必须给出正确的poption "
 "定价否则投机者可以通过购买相反payoff的poption套利。单方面的估价往往会因利益关系导致错误定价，比如造成2007年金融危机的次级贷的错误估价就是如此。在poption中任何人都可以沽多或沽空任意的收益曲线，买和卖是完全对称的，定价最终由市场完成，这将有效的保护市场和买家。"
 msgstr ""
+"The poption price to hedge impermanent losses must be fair. "
+"Liquidity pools must provide correct pricing or they will suffer loss from speculators. "
+"Unilateral valuations are often biased due to stakes. For example, the subprime mortgages that caused the 2007 financial crisis were misvalued. "
+"In poption, anyone can long or short a payoff curve. Buying and selling are completely symmetrical, and the price is determined by the market, "
+"which will effectively protect both the market and the buyers."
 
 #: ../../source/hedge_il.rst:64
 msgid "通过市场价格信号，当对冲无常损失的产品有较高需求的时候，我们能从投机者那里获取用于对冲损失的资产而不是仅仅依靠流动性提供这来提供这些资产，这有助于稳定资产价格。"
 msgstr ""
+"Through market price signals, when there is high demand for products that hedge against impermanent losses, "
+"we are able to get the asset from speculators to hedge losses rather than just relying on liquidity provision, and this also helps stabilize the prices."
 
 #: ../../source/hedge_il.rst:66
 msgid "其次在市场中有一些对冲无常损失的产品是有非常严重的兑付风险的。而在 poption 中是没有此类风险的，它的收益在到期后是必然能够兑现的。"
 msgstr ""
+"Secondly there are some products in the market that are subject to very serious redemption risk. "
+"Whereas in poption there is no such risk and it is always fully collateralized."
 
 #: ../../source/hedge_il.rst:70
 msgid "总结"
-msgstr ""
+msgstr "Conclusion"
 
 #: ../../source/hedge_il.rst:72
 msgid "在 Poption 市场中对冲一个无常损失是方便容易的。Poption的通用性和安全性会使在Poption市场中对冲无常损失变得有吸引力。"
 msgstr ""
-
+"Hedging an impermanent loss in poption market is simple and easy. "
+"The versatility and safety of poption will make it attractive to hedge an invariant loss in its market."
