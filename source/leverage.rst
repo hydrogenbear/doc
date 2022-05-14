@@ -9,30 +9,41 @@
 方法
 ----
 
-我们从最简单的保证金交易开始理解 poption 中的杠杆交易。在保证金交易中我们从券商借入一笔资金，使用这笔资金加上自己的资金购入一些资产。然后随着资产价格的变动我们会获得更高的收益或者承受更高的亏损。它的收益曲线是这样的。
+我们从最简单的保证金交易开始理解 poption 中的杠杆交易。在保证金交易中我们从券商借入一笔资金，使用这笔资金加上自己的资金购入一些资产。然后随着资产价格的变动我们会获得更高的收益或者承受更高的亏损。
 
-.. image:: ../images/payoff_l_0.png
+.. figure:: ../images/payoff_l_0.png
     :align: center
+
+    融资交易的收益曲线
 
 我们看到这个收益曲线中有负的一部分，这是因为当资产价格下跌后我们持有的资产的价值就会低于借入的资金价值。这个时候我们就没法还清全部的借款了，券商可不希望这样，他要确保自己能收到还款。因此此时我们就会收到追缴保证金通知或者更进一步的，被清仓。但其实我们并不希望欠券商钱或者被强制交易不是么？那么我们应该把这部分风险转移出去。我们可以通过购买 `看跌期权来 <https://www.cmegroup.com/cn-s/education/learn-about-trading/courses/introduction-to-options/explaining-put-options-short-and-long.html>`_ 做到这一点。看跌期权的收益曲线长这样。
 
-.. image:: ../images/payoff_l_1.png
+.. figure:: ../images/payoff_l_1.png
     :align: center
+
+    看跌期权的收益曲线
 
 组合后我们的资产的收益曲线长这样。
 
-.. image:: ../images/payoff_l_2.png
+.. figure:: ../images/payoff_l_2.png
     :align: center
+
+    合成后的收益曲线，等价与一个看涨期权
 
 看，现在收益曲线中没有负数的部分了，不管价格怎么变，我们都不会欠券商钱，因为我们不会欠券商钱，券商也不能给我们清仓，强迫我们交易。可以看到通过一个看空期权，我们把风险转移到了期权卖家手中。此外由于这样的看跌期权是一个 `价外期权 <https://www.cmegroup.com/cn-s/education/learn-about-trading/courses/introduction-to-options/calculating-options-moneyness-and-intrinsic-value.html>`_ ，它会很便宜。由此得出，这里我们牺牲了一点点的资金效率的情况下利用衍生品使交易变得更安全。在 poption 中我们可以直接购买一个对应收益的 poption 来满足相同的金融需求。但和传统期权有一点不一样的地方，在 poption 中做市商和投资者的位置是完全对称的，做市商保护自己不被清算的需求和普通投资者是一样的，资产价格的持续上涨会导致裸空的期权卖家承受被挤兑的风险，为了回避这部分风险，做市商不会向投资者卖出这部分期权。最后可以被交易的 poption 的收益曲线长这个样子。这相当于传统期权中的一个 `牛市价差策略 <https://www.cmegroup.com/cn-s/education/courses/option-strategies/bull-spread.html>`_ 。
 
-.. image:: ../images/payoff_l_3.png
+.. figure:: ../images/payoff_l_3.png
     :align: center
+
+    最终的收益曲线，等价与一个牛市价差策略
 
 当投资人想要做空资产价格的时候，他也可以使用一个相反的策略，也就是熊市价差策略，收益曲线如下。
 
-.. image:: ../images/payoff_l_4.png
+.. figure:: ../images/payoff_l_4.png
     :align: center
+
+    一个熊市价差策略的收益曲线
+
 
 .. _leverage_example:
 

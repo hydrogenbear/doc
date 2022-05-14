@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-11 18:17+0800\n"
+"POT-Creation-Date: 2022-05-14 08:25+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Hydrogen Bear <hydrogenbear@poption.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,13 +28,15 @@ msgid ""
 " "
 "是一种在收益曲线上提供最大自由度，而在其他方面则做最大简化的金融衍生品。这使得它能够满足不同的金融需求却又足够简单从而能大众化。我们相信它在未来能成为链上主要的金融衍生品。"
 msgstr ""
-"The name poption is derived from payoff option and pop option. "
-"As the name suggests, it is a kind of option focusing on payoff functions. "
-"Payoff is a very important attribute of a financial product, "
-"financial products with similar payoff can meet similar needs. "
-"Poption is a derivative that allow investors to customize the payoff in a very simple framework. "
-"This makes poption to be flexible enough to meet different financial needs in the same market and be simple enough to be popular. "
-"We believe it has the potential to become a major financial derivative on the chain in the future."
+"The name poption is derived from payoff option and pop option. As the "
+"name suggests, it is a kind of option focusing on payoff functions. "
+"Payoff is a very important attribute of a financial product, financial "
+"products with similar payoff can meet similar needs. Poption is a "
+"derivative that allow investors to customize the payoff in a very simple "
+"framework. This makes poption to be flexible enough to meet different "
+"financial needs in the same market and be simple enough to be popular. We"
+" believe it has the potential to become a major financial derivative on "
+"the chain in the future."
 
 #: ../../source/introduction.rst:6
 msgid ""
@@ -42,44 +44,53 @@ msgid ""
 "中投资者可以直接自定义收益曲线并从做市商那里获得相应收益曲线的 poption，并在 poption "
 "到期时获得收益曲线规定的底层资产。下图是自定义 poption 曲线的几个例子，绿线是poption自定义的收益曲线。"
 msgstr ""
-"In poption investors can directly customize the payoff function and obtain the poption from the market maker"
-" and receive the underlying assets as specified in the payoff function when the poption expires. "
-" This is much easier than using multiple different derivatives to synthesize the required assets."
-"The gree lines in the charts below show a few examples of poptions with different payoff functions."
+"In poption investors can directly customize the payoff function and "
+"obtain the poption from the market maker and receive the underlying "
+"assets as specified in the payoff function when the poption expires.  "
+"This is much easier than using multiple different derivatives to "
+"synthesize the required assets.The gree lines in the charts below show a "
+"few examples of poptions with different payoff functions."
 
 #: ../../source/introduction.rst:11
 msgid ":ref:`一个基于 Matic 价格采取牛市价差策略收益的 poption ，收益以 USDC 结算。<leverage>`"
-msgstr ":ref:`A poption with a bullish spread strategy payoff on Matic prices, denominated via USDC. <leverage>`"
+msgstr ""
+":ref:`A poption with a bullish spread strategy payoff on Matic prices, "
+"denominated via USDC. <leverage>`"
 
 #: ../../source/introduction.rst:16
 msgid ":ref:`一个提供对冲ETH-USDC 流动性池无常损失功能的 poption，收益以 USDC 结算<hedge_il>`"
 msgstr ""
-":ref:`A poption that hedge against the impermanent loss of a ETH-USDC liquidity pool, denominated via USDC <hedge_il>`"
+":ref:`A poption that hedge against the impermanent loss of a ETH-USDC "
+"liquidity pool, denominated via USDC <hedge_il>`"
 
 #: ../../source/introduction.rst:21
 msgid ":ref:`一个为了好玩定义正弦函数为收益的 poption，收益以 USDC 结算<sin_payoff>`"
 msgstr ":ref:`a poption whose payoff is a sine function for fun <sin_payoff>`"
 
-#: ../../source/introduction.rst:23
-msgid "接下来你可以阅读以下链接了解更多信息："
-msgstr "Follow the links below to learn more."
-
 #: ../../source/introduction.rst:25
+msgid "了解更多信息"
+msgstr "More Information"
+
+#: ../../source/introduction.rst:26
 msgid ":ref:`leverage`"
 msgstr ""
 
-#: ../../source/introduction.rst:26
+#: ../../source/introduction.rst:27
 msgid ":ref:`hedge_il`"
 msgstr ""
 
-#: ../../source/introduction.rst:27
+#: ../../source/introduction.rst:28
 msgid ":ref:`any_payoff`"
 msgstr ""
 
-#: ../../source/introduction.rst:28
+#: ../../source/introduction.rst:29
 msgid ":ref:`poption_contract`"
 msgstr ""
 
-#: ../../source/introduction.rst:29
+#: ../../source/introduction.rst:30
 msgid ":ref:`settle`"
 msgstr ""
+
+#~ msgid "接下来你可以阅读以下链接了解更多信息："
+#~ msgstr "Follow the links below to learn more."
+

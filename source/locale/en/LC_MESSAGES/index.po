@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-11 14:34+0800\n"
+"POT-Creation-Date: 2022-05-14 08:25+0800\n"
 "PO-Revision-Date: 2022-05-11 14:34+0800\n"
 "Last-Translator: Hydrogen Bear<hydrogenbear@poption.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,12 +30,18 @@ msgid "欢迎来到 poption 的文档!"
 msgstr "Welcome to poption documentation."
 
 #: ../../source/index.rst:9
+#, fuzzy
 msgid ""
-"Poption 是一种安全通用高效的金融衍生品，专为链上交易设计，是一个完全的分布式金融产品。Poption "
+"`Poption <https://www.poption.exchange/>`_ "
+"是一种安全通用高效的金融衍生品，专为链上交易设计，是一个完全的分布式金融产品。Poption "
 "能通过区块链为原本无法触及这些服务的用户提供对冲风险，投机交易等多种金融服务。作为一颗小小的种子为全世界金融的自由和平等带来一份力量。"
 msgstr ""
-"Poption is a safe, general purpose and captical efficient financial derivative. It is designed for block-chain, and is a fully distributed financial product. Poption "
-"can provide users with a variety of financial services that were previously unavailable, such as hedging risks, speculation, etc. As a small spark, it will bring more freedom and equality in finance to the world."
+"Poption is a safe, general purpose and captical efficient financial "
+"derivative. It is designed for block-chain, and is a fully distributed "
+"financial product. Poption can provide users with a variety of financial "
+"services that were previously unavailable, such as hedging risks, "
+"speculation, etc. As a small spark, it will bring more freedom and "
+"equality in finance to the world."
 
 #: ../../source/index.rst:34
 msgid "白皮书"
@@ -45,5 +51,25 @@ msgstr "White Paper"
 msgid ""
 "`Poption A General-Purpose Exotic Option Designed For DeFi "
 "<https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_"
+msgstr ""
+
+#: ../../source/index.rst:38
+msgid "相关链接"
+msgstr ""
+
+#: ../../source/index.rst:39
+msgid "`网站 <https://www.poption.exchange/>`_"
+msgstr ""
+
+#: ../../source/index.rst:40
+msgid "`推特 <https://twitter.com/hb_poption/>`_"
+msgstr ""
+
+#: ../../source/index.rst:41
+msgid "`Github <https://github.com/Poption-DeFi/>`_"
+msgstr ""
+
+#: ../../source/index.rst:42
+msgid "`Discord <https://discord.gg/wGeWbmTMu5/>`_"
 msgstr ""
 

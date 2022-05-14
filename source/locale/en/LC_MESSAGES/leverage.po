@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-11 18:01+0800\n"
+"POT-Creation-Date: 2022-05-14 08:25+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,15 +42,18 @@ msgstr "Methods"
 #: ../../source/leverage.rst:12
 msgid ""
 "我们从最简单的保证金交易开始理解 poption "
-"中的杠杆交易。在保证金交易中我们从券商借入一笔资金，使用这笔资金加上自己的资金购入一些资产。然后随着资产价格的变动我们会获得更高的收益或者承受更高的亏损。它的收益曲线是这样的。"
+"中的杠杆交易。在保证金交易中我们从券商借入一笔资金，使用这笔资金加上自己的资金购入一些资产。然后随着资产价格的变动我们会获得更高的收益或者承受更高的亏损。"
 msgstr ""
 "We start with margin trading to construct a leveraged trade in poption. "
 "In margin trading we borrow some money from a brokerage and use that "
 "money, together with our own, to buy some assets. Then as the price of "
-"the asset moves we take higher gains or higher losses. The payoff is "
-"illustrated in the following chart."
+"the asset moves we take higher gains or higher losses."
 
 #: ../../source/leverage.rst:17
+msgid "融资交易的收益曲线"
+msgstr "payoff of buying on margin"
+
+#: ../../source/leverage.rst:19
 msgid ""
 "我们看到这个收益曲线中有负的一部分，这是因为当资产价格下跌后我们持有的资产的价值就会低于借入的资金价值。这个时候我们就没法还清全部的借款了，券商可不希望这样，他要确保自己能收到还款。因此此时我们就会收到追缴保证金通知或者更进一步的，被清仓。但其实我们并不希望欠券商钱或者被强制交易不是么？那么我们应该把这部分风险转移出去。我们可以通过购买"
 " `看跌期权来 <https://www.cmegroup.com/cn-s/education/learn-about-"
@@ -63,14 +66,24 @@ msgstr ""
 "loans, which the brokerage doesn't want, so we will get a margin call or,"
 " even worse, a liquidation. However we don't want to owe money to the "
 "broker or be forced to trade, do we? How about shifting that risk. We can"
-" do this by purchasing a `put option <https://www.cmegroup.com/education/courses/introduction-to-options/explaining-put-options-short-and-long.html>`_ . The payoff of such a put "
-"option looks like this."
+" do this by purchasing a `put option "
+"<https://www.cmegroup.com/education/courses/introduction-to-options"
+"/explaining-put-options-short-and-long.html>`_ . The payoff of such a put"
+" option looks like this."
 
-#: ../../source/leverage.rst:22
+#: ../../source/leverage.rst:24
+msgid "看跌期权的收益曲线"
+msgstr "payoff of a put option"
+
+#: ../../source/leverage.rst:26
 msgid "组合后我们的资产的收益曲线长这样。"
 msgstr "The payoff of our portfolio now looks like this."
 
-#: ../../source/leverage.rst:27
+#: ../../source/leverage.rst:31
+msgid "合成后的收益曲线，等价与一个看涨期权"
+msgstr "payoff of the portfolio, equal to a call option"
+
+#: ../../source/leverage.rst:33
 msgid ""
 "看，现在收益曲线中没有负数的部分了，不管价格怎么变，我们都不会欠券商钱，因为我们不会欠券商钱，券商也不能给我们清仓，强迫我们交易。可以看到通过一个看空期权，我们把风险转移到了期权卖家手中。此外由于这样的看跌期权是一个"
 " `价外期权 <https://www.cmegroup.com/cn-s/education/learn-about-"
@@ -102,33 +115,41 @@ msgstr ""
 "/bull-spread.html>`_ in options. we can directly purchase a poption with "
 "the such a payoff to meet the financial need."
 
-#: ../../source/leverage.rst:32
+#: ../../source/leverage.rst:38
+msgid "最终的收益曲线，等价与一个牛市价差策略"
+msgstr "The final payoff, equals to a bull spread strategy."
+
+#: ../../source/leverage.rst:40
 msgid "当投资人想要做空资产价格的时候，他也可以使用一个相反的策略，也就是熊市价差策略，收益曲线如下。"
 msgstr ""
 "When an investor wants to short an asset price, he can also use an "
 "opposite strategy, the bear spread strategy, with the following payoff."
 
-#: ../../source/leverage.rst:40
+#: ../../source/leverage.rst:45
+msgid "一个熊市价差策略的收益曲线"
+msgstr "Payoff of a bear spread strategy."
+
+#: ../../source/leverage.rst:51
 msgid "操作"
 msgstr "Example"
 
-#: ../../source/leverage.rst:42
+#: ../../source/leverage.rst:53
 msgid "现在我们看一个具体的例子。"
 msgstr "Now let's look at an example. "
 
-#: ../../source/leverage.rst:44
+#: ../../source/leverage.rst:55
 msgid ""
 "假设当前 MATIC 兑 USDC 的比例是 1.2:1，我们看涨 MATIC，我们希望在 poption 中以 4 倍杠杆做多 "
 "MATIC。我们在 `poption App页面 <https://www.poption.exchange/app/>`_ 中选择 WMATIC"
-"/USDC-USDC的poption并点击。如图所示："
+"/USDC-USDC的poption并点击。（阅读 :ref:`poption_contract` 了解更多poption代码的信息。） "
+"如图所示："
 msgstr ""
 "Assuming that the current MATIC/USDC ratio is 1.2:1, we are bullish on "
-"MATIC and we want to go long MATIC with 4X leverage in poption.Click "
-"'WMATIC/USDC-USDC' card in the poption "
-"`app page <https://www.poption.exchange/app/>`_ to the swap page of the "
-"poption."
+"MATIC and we want to go long MATIC with 4X leverage in poption. Click "
+"'WMATIC/USDC-USDC' card in the poption `app page "
+"<https://www.poption.exchange/app/>`_ to the swap page of the poption. (Read :ref:`poption_contract` to learn more.)"
 
-#: ../../source/leverage.rst:49
+#: ../../source/leverage.rst:60
 msgid ""
 "在 poption 前端界面中我们有一系列的小工具用于快速生成各种需求下的 "
 "poption。右边第一个小工具是期权工具。它能计算各种行权价下的期权的收益并生成一个近似的 "
@@ -140,7 +161,7 @@ msgstr ""
 "approximate poption. The approximate margin trading function is also "
 "integrated in this tool."
 
-#: ../../source/leverage.rst:51
+#: ../../source/leverage.rst:62
 msgid ""
 "在工具中我们选择 ‘call’表示我们希望做多，然后点击 ‘X4’ 表示四倍杠杆。在 share 栏输入 100 表示购买 100 个 MATIC"
 " 份额的 poption。然后点击 Approximate。如下图所示："
@@ -149,7 +170,7 @@ msgstr ""
 " to indicate quadruple leverage. Entering 100 in the share field means to"
 " buy 100 MATIC shares. Then click the Approximate button. As shown below:"
 
-#: ../../source/leverage.rst:56
+#: ../../source/leverage.rst:67
 msgid ""
 "在左侧的收益图表中绿线是我们所要购买的 poption 收益曲线，红线是我们需要支付的成本。当价格为 0.9 的时候 Poption 的收益是 "
 "0，当价格是 1.5 的时候它的收益是 60 USDC。Matic 价格上涨了 0.6 而 Poption 的收益上升了 60，说明它的确和 "
@@ -163,7 +184,7 @@ msgstr ""
 " 100 Matics in this range. When we use 4 times leverage, we lose all "
 "value when the price is at 0.9, which is also consistent with the payoff."
 
-#: ../../source/leverage.rst:62
+#: ../../source/leverage.rst:73
 msgid ""
 "最后我们看一下报价，在右下方的 TRADE 工具中，这样一个 poption 的报价是 30.9 USDC，这略多于 1.2 / 4 \\* "
 "100 = 30 USDC，这一部分来自对冲清算风险所付出的价值，一部分是因为 poption "
@@ -179,7 +200,7 @@ msgstr ""
 "leverage.Finally we can click the swap button in the trade widget to buy "
 "this poption."
 
-#: ../../source/leverage.rst:68
+#: ../../source/leverage.rst:79
 msgid ""
 "我们可以选择支付底层资产或同样的poption "
 "收益去完成这次交易，App会优先使用投资者账户中的poption，如果poption不足，投资者则需要支付相应的底层资产。在这个例子中，账户内并没有poption，"
@@ -188,17 +209,16 @@ msgid ""
 msgstr ""
 "We can choose to pay either the underlying asset or the same amount of "
 "the poption payoff to make the transaction, the app will use the poption "
-"of the investor first, if there is not enough poption, the "
-"investor shall use the underlying asset. In this example, there is no "
-"poption in the account, so the transaction is paid via USDC, which is "
-"shown in 'To Mint' at the bottom. Please Read :ref:`trade_tool` to learn "
-"more."
+"of the investor first, if there is not enough poption, the investor shall"
+" use the underlying asset. In this example, there is no poption in the "
+"account, so the transaction is paid via USDC, which is shown in 'To Mint'"
+" at the bottom. Please Read :ref:`trade_tool` to learn more."
 
-#: ../../source/leverage.rst:71
+#: ../../source/leverage.rst:82
 msgid "讨论"
 msgstr "Discussion"
 
-#: ../../source/leverage.rst:73
+#: ../../source/leverage.rst:84
 msgid ""
 "在传统金融市场中，利用资金优势或者信息优势，通过控制市场中的流动性恶意轧压对手的情况比比皆是。在过去的一年中，就有 GME "
 "事件，原油宝事件，伦敦镍事件发生。可见清算风险即便是专业人士也很难防范，并且这些事件严重破坏了金融市场的安全和稳定。这是我们在设计 poption"
@@ -225,11 +245,11 @@ msgstr ""
 "all the poption fully collateralized all the time and no one will face "
 "liquidation at any moment."
 
-#: ../../source/leverage.rst:76
+#: ../../source/leverage.rst:87
 msgid "总结"
 msgstr "Conclusion"
 
-#: ../../source/leverage.rst:78
+#: ../../source/leverage.rst:89
 msgid ""
 "在 Poption 市场中任何人都无法买入或卖出一份有清算风险的衍生品。Poption "
 "在排除了清算风险的同时最大地保留了衍生品的高资金效率。我们认为相较于传统保证金交易。Poption 是更安全，更有吸引力的金融衍生品。"
