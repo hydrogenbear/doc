@@ -30,7 +30,7 @@ msgstr ""
 "In a poption, we can sell/short any poption curve as long as we can buy it. "
 "If we own a poption, we can sell it and get the underlying asset directly. "
 "If we want to do a 'naked short', we need to mint poption from underlying assets first. "
-"Learn more about :ref:`trade_tool`"
+"Read :ref:`trade_tool` to learn more about trading."
 
 #: ../../source/sell.rst:9
 msgid ""
