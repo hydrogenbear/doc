@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, poption.org
+# This file is distributed under the same license as the poption package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poption \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 08:44+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/il_calculator.rst:4
+msgid "无常损失计算器"
+msgstr ""
+
+#: ../../source/il_calculator.rst:6
+msgid ""
+"计算器链接： `https://www.poption.exchange/tools/il "
+"<https://www.poption.exchange/tools/il>`_"
+msgstr ""
+
+#: ../../source/il_calculator.rst:9
+msgid "Uniswap v2 或其他相似流动性池的无常损失"
+msgstr ""
+
+#: ../../source/il_calculator.rst:16
+msgid "Uniswap v3 流动性池的无常损失"
+msgstr ""
+

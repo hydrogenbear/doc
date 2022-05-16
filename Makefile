@@ -12,11 +12,20 @@ BUILDDIR      = build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile
+.PHONY: help Makefile html
 
 en: gettext
-	sphinx-intl update -p build/gettext -l en
-	@$(SPHINXBUILD) -b html -D language=en -D html_search_language=en source _build/html/en
+	sphinx-intl update -p ${BUILDDIR}/gettext -l $@
+	@$(SPHINXBUILD) -b html -D language=$@ -D html_search_language=$@ ${SOURCEDIR} ${BUILDDIR}/html/$@
+
+zh_CN: gettext
+	sphinx-intl update -p ${BUILDDIR}/gettext -l $@
+	@$(SPHINXBUILD) -b html -D language=$@ -D html_search_language=$@ ${SOURCEDIR} ${BUILDDIR}/html/$@
+
+index: en
+	cp source/index.html build/html/index.html
+
+html: en zh_CN index
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
