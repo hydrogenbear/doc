@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-11 14:34+0800\n"
+"POT-Creation-Date: 2022-05-16 09:11+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,15 +19,17 @@ msgstr ""
 
 #: ../../source/liquidity_pool.rst:2
 msgid "提供流动性"
-msgstr ""
+msgstr "Auto Market Maker and Liquidity Provider"
 
 #: ../../source/liquidity_pool.rst:4
 msgid "对于每一个 poption 智能合约，我们配套了一个自动做市商合约来满足交易功能。"
 msgstr ""
+"For each poption smart contract, we also provide an auto market maker "
+"contract to meet the swap needs."
 
 #: ../../source/liquidity_pool.rst:7
 msgid "与自动做市商交换poption"
-msgstr ""
+msgstr "Swap Poption with Auto Market Maker."
 
 #: ../../source/liquidity_pool.rst:8
 msgid ""
@@ -35,70 +37,113 @@ msgid ""
 "的形式储存在智能合约中的。poption "
 "自动做市商是一个多令牌的变权重的自动做市商。它能够实现一个poption合约中多种令牌之间的交换，从而满足交易不同poption 的需求。"
 msgstr ""
+"In poption, an investor's poption is stored in the smart contract in the "
+"form of :ref:`payoff tokens<payoff_tokens>`. Poption auto market maker is a multi-token, "
+"variable weighted auto market maker. Users can get their desired payoff "
+"by swaping different payoff tokens with the market maker. "
 
 #: ../../source/liquidity_pool.rst:10
-msgid "同很多自动做市商的流动性池一样。poption的流动性池也是同比进出的。进入流动性池的收益令牌必须和流动性池中已有的收益令牌保持相同的比例。进入流动性池会铸造相应的流动性池令牌，离开流动性池则会销毁这些令牌。"
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:13
-msgid "前端界面"
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:14
 msgid ""
-"我们可以在 poption 界面中向流动性池添加或移出流动性。我们在 `poption App页面 "
-"<https://www.poption.exchange/app/>`_ 中选择一个 poption 产品并点击。如图所示："
+"我们的自动做市商是一个常函数做市商，它使用的交易函数如下，其中 :math:`\\mathbf{w}` 是收益令牌的权重向量， "
+":math:`\\mathbf{a}` 是流动性池中收益令牌的结余向量："
 msgstr ""
+"The poption automated market maker uses the constant function market "
+"maker algorithm. The trade function is defined as follows, where "
+":math:`\\mathbf{w}` is the weight vector and :math:`\\mathbf{a}` is the "
+"balance vector of the payoff tokens in the liquidity pool."
 
-#: ../../source/liquidity_pool.rst:19
-msgid "进入页面后点击Pool按钮，进入流动性池界面，如图所示："
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:24
-msgid ""
-"在图表区下方的开关中选择添加或移出流动性（2），使用边上的滑条或是输入框输入添加或移出的数量（3），在左侧流动性池结余中查看流动性池中的poption收益，其中蓝色的是当前已经在池中的poption收益，绿色是准备加入流动性池的poption收益，如果是红色则代表准备移出流动性池的poption收益（4）。在右侧信息栏中可以了解当前拥有的流动性令牌数量和准备铸造或销毁的流动性令牌数量，以及它们占整个流动性池的比重（5）。点击"
-" ADD LIQUIDITY 或 REMOVE LIQUIDITY 按钮执行交易（6）。"
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:27
-msgid "收益和损失"
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:28
-msgid "流动性池的收益来自收费，损失来自被套利者套利。这里我们对poption自动做市商的内在机制做一定的讨论，来帮助我们了解流动性提供者可能的收益和损失情况。"
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:31
-msgid "费用"
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:32
-msgid ""
-"poption 自动做市商使用的是常函数做市商算法。它也和其他常函数做市商一样通过在交易函数中加入费用系数来收费。它使用的交易函数如下，其中 "
-":math:`\\mathbf{w}` 是收益令牌的权重向量， :math:`\\mathbf{a}` 是流动性池中收益令牌的结余向量："
-msgstr ""
-
-#: ../../source/liquidity_pool.rst:34
+#: ../../source/liquidity_pool.rst:12
 msgid ""
 "\\phi(\\mathbf{w},\\mathbf{a})=\\sum_{i=1}^n w_ilog(a_i)\n"
 "\n"
 msgstr ""
 
-#: ../../source/liquidity_pool.rst:37
+#: ../../source/liquidity_pool.rst:15
 msgid "它等价于几何平均数交易函数："
-msgstr ""
+msgstr "It is equivalent to the geometric mean trade function:"
 
-#: ../../source/liquidity_pool.rst:39
+#: ../../source/liquidity_pool.rst:17
 msgid ""
 "exp(\\phi'(\\mathbf{w},\\mathbf{a}))=\\prod_{i=1}^n a_i^{w_i}\n"
 "\n"
 msgstr ""
 
-#: ../../source/liquidity_pool.rst:42
-msgid "自动做市商的交易条件是："
+#: ../../source/liquidity_pool.rst:21
+msgid "流动性池令牌"
+msgstr "Liquidity Pool (LP) Token"
+
+#: ../../source/liquidity_pool.rst:22
+msgid "同很多自动做市商的流动性池一样。poption的流动性池也是同比进出的。进入流动性池的收益令牌必须和流动性池中已有的收益令牌保持相同的比例。进入流动性池会铸造相应的流动性池令牌，离开流动性池则会销毁这些令牌。"
 msgstr ""
+"Like many automated market makers' liquidity pools, adding/removing "
+"liquidity requires depositing/withdrawing payoff tokens with the same "
+"ratio of payoff tokens in the liquidity pool. Adding liquidity will mint "
+"liquidity pool (LP) tokens, and removing liquidity will burn these "
+"tokens."
+
+#: ../../source/liquidity_pool.rst:25
+msgid "前端界面"
+msgstr "App Interface"
+
+#: ../../source/liquidity_pool.rst:26
+msgid ""
+"我们可以在 poption 界面中向流动性池添加或移出流动性。我们在 `poption App页面 "
+"<https://www.poption.exchange/app/>`_ 中选择一个 poption 产品并点击。如图所示："
+msgstr ""
+"We can add or remove liquidity to or from the liquidity pool in the "
+"poption interface. Click a poption product in the `poption App page "
+"<https://www.poption.exchange/app/>` , as shown below:"
+
+#: ../../source/liquidity_pool.rst:31
+msgid "进入页面后点击Pool按钮，进入流动性池界面，如图所示："
+msgstr ""
+"Enter the poption page and click the 'pool' tab (1) to enter the 'pool' "
+"page, as shown below:"
+
+#: ../../source/liquidity_pool.rst:36
+msgid ""
+"在图表区下方的开关中选择添加或移出流动性（2），使用边上的滑条或是输入框输入添加或移出的数量（3），在左侧流动性池结余中查看流动性池中的poption收益，其中蓝色的是当前已经在池中的poption收益，绿色是准备加入流动性池的poption收益，如果是红色则代表准备移出流动性池的poption收益（4）。在右侧信息栏中可以了解当前拥有的流动性令牌数量和准备铸造或销毁的流动性令牌数量，以及它们占整个流动性池的比重（5）。点击"
+" ADD LIQUIDITY 或 REMOVE LIQUIDITY 按钮执行交易（6）。"
+msgstr ""
+"Select to add or remove liquidity with the switch at the bottom of the "
+"chart area (2). Use the slider bar or the input box to enter the number "
+"of additions or removals (3). View the poption payoff earned in the "
+"liquidity pool in the 'liquidity pool balance' chart on the left side, "
+"where the blue area is the payoff of poption currently in the pool, green"
+" area is the payoff of poption that is going to be added to the liquidity"
+" pool, and the red area (not show in this figure) is a poption that is "
+"going to be moved out of the liquidity pool (4). On the right side, it "
+"shows the number of liquidity tokens currently owned by the holder and "
+"the number of liquidity tokens are going to be minted or burned, as well "
+"as their share of the overall liquidity pool (5). Click on the 'ADD "
+"LIQUIDITY' or 'REMOVE LIQUIDITY' button to take the transaction (6)."
+
+#: ../../source/liquidity_pool.rst:39
+msgid "收益和损失"
+msgstr "Earnings and losses"
+
+#: ../../source/liquidity_pool.rst:40
+msgid "流动性池的收益来自收费，损失来自被套利者套利。这里我们对poption自动做市商的内在机制做一定的讨论，来帮助我们了解流动性提供者可能的收益和损失情况。"
+msgstr ""
+"Liquidity pools earn from fees and lose from being arbitrated by "
+"arbitrageurs. Here we discuss the mechanisms in poption automated market "
+"makers to help us understand the possible gains and losses of liquidity "
+"providers."
+
+#: ../../source/liquidity_pool.rst:43
+msgid "费用"
+msgstr "Fee"
 
 #: ../../source/liquidity_pool.rst:44
+msgid "poption 自动做市商使用的是常函数做市商算法。它也和其他常函数做市商一样通过在交易函数中加入费用系数来收费。自动做市商的交易条件是："
+msgstr ""
+"The poption automated market maker charges the fees as other constant "
+"function market makers do by adding a fee factor to the trade function. "
+"The trade function is defined as follows, where :math:`\\mathbf{w}` is "
+"the weight vector and :math:`\\mathbf{a}` is the balance vector of the "
+"payoff tokens in the liquidity pool."
+
+#: ../../source/liquidity_pool.rst:46
 msgid ""
 "\\phi(\\mathbf{w}, \\mathbf{a} - (1 + \\gamma)\\boldsymbol{\\delta}_+ - "
 "\\dfrac{\\boldsymbol{\\delta}_-}{1 + \\gamma}) \\geq \\phi(\\mathbf{w}, "
@@ -106,33 +151,68 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../source/liquidity_pool.rst:47
+#: ../../source/liquidity_pool.rst:49
 msgid ""
 "其中 :math:`\\boldsymbol{\\delta}` 代表交易，投资人用 "
 ":math:`-\\boldsymbol{\\delta}_-` 从做市商那里换取 :math:`\\boldsymbol{\\delta}_+`"
 " 。而 :math:`\\gamma` 就是自动做市商向交易者收取的费率。这个费率就是 L1 费率，它显示在流动性池的信息栏中。"
 msgstr ""
+"where :math:`\\boldsymbol{\\delta}` represents the transaction. Trader "
+"pays :math:`-\\boldsymbol{\\delta}_-` and gets :math:`\\boldsymbol "
+"{\\delta}_+` from the market maker . :math:`\\gamma` is the fee rate "
+"charged by the automated market maker to the trader, which is called 'L1 "
+"fee rate' in the app interface shown above (5). "
 
-#: ../../source/liquidity_pool.rst:50
+#: ../../source/liquidity_pool.rst:52
 msgid "损失"
-msgstr ""
+msgstr "Loss"
 
-#: ../../source/liquidity_pool.rst:51
+#: ../../source/liquidity_pool.rst:53
 msgid ""
 "自动做市商的损失来自被投机者套利（在现货市场中表现为无常损失）。如果不想遭受套利带来的损失，我们需要让每一个poption收益令牌的卖出价高于其价值而买入价低于其价值。套利的本质是利用市场相对信息差，poption做市商会同时利用现货市场和衍生品市场的信息进行定价，从而避免被套利。通过使用现货市场的价格作为免费信息源，poption"
 " 做市商利用 Black-Scholes 模型来调整交易函数中的权重，达到及时调整交易价格 "
 "的效果。这样的定价模型既通过流动性池的涨跌保留了poption交易者提供的信息，又充分利用了现货市场的信息，最大程度的避免了流动性提供者的损失。"
 msgstr ""
+"The automatic market maker's losses come from being arbitrated by "
+"speculators (which is known as impermanent losses in the spot market). If"
+" we do not want to suffer losses from arbitrage, we need to sell each "
+"poption token above its value and buy below its value. The essence of "
+"arbitrage is to exploit the relative information differences in the "
+"market. A poption market maker will use information from both the spot "
+"market and the derivatives market to avoid being arbitrated. The poption "
+"market maker uses the spot market price as a free source of information,"
+"  and integrate the information to the price of payoff tokens via Black-"
+"Scholes model and auto market maker algorithm. The market maker also "
+"preserves the information provided by the poption trader through the "
+"balances of liquidity pool. "
 
-#: ../../source/liquidity_pool.rst:53
+#: ../../source/liquidity_pool.rst:55
 msgid "以下是定价模型示意图："
 msgstr ""
+"The following is a schematic diagram of the pricing model used by the "
+"automatic market maker:"
 
-#: ../../source/liquidity_pool.rst:59
+#: ../../source/liquidity_pool.rst:61
 msgid "二级费用"
-msgstr ""
+msgstr "L2 Fee"
 
-#: ../../source/liquidity_pool.rst:60
-msgid "二级费用是"
+#: ../../source/liquidity_pool.rst:62
+msgid ""
+"二级费用是 poption "
+"开发者向流动性提供者收取的费用，当流动性提供者获得利润时，开发者会从利润中抽取一部分作为二级费用。当流动性提供者出现损失时，开发者不会收取任何费用。"
+" 收取的费用为 :math:`二级费率 * (加入流动性池时的 poption 价值 - 离开流动性池时的 poption 价值)` 。 "
+"关于计算流动性池令牌价值的信息请参考： `Poption A General-Purpose Exotic Option Designed For"
+" DeFi <https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_ "
+"。"
 msgstr ""
+"The L2 fee is the fee charged by the poption developers to the liquidity "
+"providers when the liquidity providers gain earnings. The earning is "
+"calculated asthe value an investor removed from liquidity pool minus the "
+"value he added before dominated by underlying asset. The fee is the 'L2 "
+"fee rate' times the earning and is charged in LP tokens. "
+"Pleas refer to `Poption A General-Purpose Exotic Option Designed For"
+" DeFi <https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_ for more information."
+
+#~ msgid "自动做市商的交易条件是："
+#~ msgstr "The condition that the market maker accept the trade with is:"
 

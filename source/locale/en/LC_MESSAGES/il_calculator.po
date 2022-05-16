@@ -19,19 +19,20 @@ msgstr ""
 
 #: ../../source/il_calculator.rst:4
 msgid "无常损失计算器"
-msgstr ""
+msgstr "Impermanent Loss Calculator"
 
 #: ../../source/il_calculator.rst:6
 msgid ""
 "计算器链接： `https://www.poption.exchange/tools/il "
 "<https://www.poption.exchange/tools/il>`_"
 msgstr ""
+"Link to the calculator: `https://www.poption.exchange/tools/il "
+"<https://www.poption.exchange/tools/il>`_"
 
 #: ../../source/il_calculator.rst:9
 msgid "Uniswap v2 或其他相似流动性池的无常损失"
-msgstr ""
+msgstr "IL Loss in Uniswap v2 or other similar pools."
 
 #: ../../source/il_calculator.rst:16
 msgid "Uniswap v3 流动性池的无常损失"
-msgstr ""
-
+msgstr "IL Loss in Uniswap v3"

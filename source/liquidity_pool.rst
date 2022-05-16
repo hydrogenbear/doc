@@ -7,6 +7,18 @@
 -------------------------
 在 poption 中，一个投资者持有的 poption 资产是以 :ref:`收益令牌<payoff_tokens>` 的形式储存在智能合约中的。poption 自动做市商是一个多令牌的变权重的自动做市商。它能够实现一个poption合约中多种令牌之间的交换，从而满足交易不同poption 的需求。
 
+我们的自动做市商是一个常函数做市商，它使用的交易函数如下，其中 :math:`\mathbf{w}` 是收益令牌的权重向量， :math:`\mathbf{a}` 是流动性池中收益令牌的结余向量：
+
+.. math::
+    \phi(\mathbf{w},\mathbf{a})=\sum_{i=1}^n w_ilog(a_i)
+
+它等价于几何平均数交易函数：
+
+.. math::
+    exp(\phi'(\mathbf{w},\mathbf{a}))=\prod_{i=1}^n a_i^{w_i}
+
+流动性池令牌
+-----------------------------
 同很多自动做市商的流动性池一样。poption的流动性池也是同比进出的。进入流动性池的收益令牌必须和流动性池中已有的收益令牌保持相同的比例。进入流动性池会铸造相应的流动性池令牌，离开流动性池则会销毁这些令牌。
 
 前端界面
@@ -29,17 +41,7 @@
 
 费用
 ~~~~~~~~~~~~~~~~~~~
-poption 自动做市商使用的是常函数做市商算法。它也和其他常函数做市商一样通过在交易函数中加入费用系数来收费。它使用的交易函数如下，其中 :math:`\mathbf{w}` 是收益令牌的权重向量， :math:`\mathbf{a}` 是流动性池中收益令牌的结余向量：
-
-.. math::
-    \phi(\mathbf{w},\mathbf{a})=\sum_{i=1}^n w_ilog(a_i)
-
-它等价于几何平均数交易函数：
-
-.. math::
-    exp(\phi'(\mathbf{w},\mathbf{a}))=\prod_{i=1}^n a_i^{w_i}
-
-自动做市商的交易条件是：
+poption 自动做市商使用的是常函数做市商算法。它也和其他常函数做市商一样通过在交易函数中加入费用系数来收费。自动做市商的交易条件是：
 
 .. math::
     \phi(\mathbf{w}, \mathbf{a} - (1 + \gamma)\boldsymbol{\delta}_+ - \dfrac{\boldsymbol{\delta}_-}{1 + \gamma}) \geq \phi(\mathbf{w}, \mathbf{a})
@@ -57,4 +59,6 @@ poption 自动做市商使用的是常函数做市商算法。它也和其他常
 
 二级费用
 ~~~~~~~~~~~~~~~~~~~~~~~
-二级费用是
+二级费用是 poption 开发者向流动性提供者收取的费用，当流动性提供者获得利润时，开发者会从利润中抽取一部分作为二级费用。当流动性提供者出现损失时，开发者不会收取任何费用。
+收取的费用为 :math:`二级费率 * (加入流动性池时的 poption 价值 - 离开流动性池时的 poption 价值)` 。
+关于计算流动性池令牌价值的信息请参考： `Poption A General-Purpose Exotic Option Designed For DeFi <https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_ 。

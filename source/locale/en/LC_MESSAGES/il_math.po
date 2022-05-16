@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../source/il_math.rst:4
 msgid "无常损失计算方法"
-msgstr ""
+msgstr "Calculate Impermanent Loss"
 
 #: ../../source/il_math.rst:7
 msgid "计算 Uniswap v2 的无常损失"
-msgstr ""
+msgstr "Calculate Impermanent Loss"
 
 #: ../../source/il_math.rst:8
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "的时候离开流动性池，他进入流动性池的资产为 :math:`a_0` 和 :math:`c_0` ，离开时的资产为 :math:`a_1` 和 "
 ":math:`c_1` ，那么我们有方程组如下："
 msgstr ""
+"Suppose an investor joined the liquidity pool when the asset price is :math:`p_0` and leaves the liquidity pool when the asset price is :math:`p_1`, "
+"and he added :math:`a_0` and :math:`c_0` to the liquidity pool and removes assets :math:`a_1` and
+ :math:`c_1` when he leave, then we have the following equations. "
 
 #: ../../source/il_math.rst:10
 msgid ""
@@ -42,7 +45,7 @@ msgstr ""
 
 #: ../../source/il_math.rst:15
 msgid "将所有资产用 :math:`c_0` 表示，解得："
-msgstr ""
+msgstr "Expressing all assets as :math:`c_0`, we will get: "
 
 #: ../../source/il_math.rst:17
 msgid ""
@@ -54,7 +57,7 @@ msgstr ""
 
 #: ../../source/il_math.rst:22
 msgid "无常损失是资产未入池和资产入池后的价值差也就是："
-msgstr ""
+msgstr "The impermanent loss is the value of assets if we had not add them into the pool minus the value of assets in the pool currently."
 
 #: ../../source/il_math.rst:24
 msgid ""
@@ -70,14 +73,16 @@ msgid ""
 "我们只要使poption的收益等于 :math:`f(x) =  c_0 (1 - \\sqrt{\\dfrac{x}{p_0}})^2` "
 "那么我们就可以对冲Uniswap池中的流动性损失了。如果不想手动计算损失的话： 使用 :ref:`il_calculator` 来计算结果："
 msgstr ""
+"We can hedge the loss with a poption whose payoff equals to :math:`f(x) = c_0 (1 - \\sqrt{\\dfrac{x}{p_0}})^2` "
+"If you don't want to calculate the loss manually: use :ref:`il_calculator` to calculate the result:"
 
 #: ../../source/il_math.rst:35
 msgid "计算 Uniswap v3 的无常损失"
-msgstr ""
+msgstr "Calculate Uniswap V3 Impermanent Loss"
 
 #: ../../source/il_math.rst:36
 msgid "对于Uniswap V3， 我们需要解的方程组如下："
-msgstr ""
+msgstr "For Uniswap V3, we shall solve the following equations:"
 
 #: ../../source/il_math.rst:38
 msgid ""
@@ -85,6 +90,9 @@ msgid ""
 ":math:`a_{out}` ，进入时价格为 :math:`p_0` ，离开时价格为 :math:`p_1` ，价格下限为 "
 ":math:`p_l` 价格上限为 :math:`p_h` 。那么我们有："
 msgstr ""
+"Let the assets added into the liquidity pool be :math:`c_{in}` and :math:`a_{in}` and the assets removed be :math:`c_{out}` and :math:`a_{out}`. "
+"The price is :math:`p_0` when adding and :math:`p_1` when removing. The price range of the liquidity is from :math: `p_l` to :math:`p_h`. "
+"Then we have:"
 
 #: ../../source/il_math.rst:40
 msgid ""
@@ -111,8 +119,9 @@ msgid ""
 "需要计算的无常损失为 :math:`c_{in} + a_{in} p_1 - (c_{out} + a_{out} p_1) = c_0 - "
 "c_l + (a_0 - a_h) p_1 - (c_1 - c_l - (a_1 - a_h) p_1)` （以c计价）。"
 msgstr ""
+"The impermanent loss is :math:`c_{in} + a_{in} p_1 - (c_{out} + a_{out} p_1) = c_0 - "
+"c_l + (a_0 - a_h) p_1 - (c_1 - c_l - (a_1 - a_h) p_1)` (denominated in :math:`c` )."
 
 #: ../../source/il_math.rst:59
 msgid "该计算过程较为复杂，可以使用 :ref:`il_calculator` 来计算结果："
-msgstr ""
-
+msgstr "The calculation process is a little complex and the results can be calculated using :ref:`il_calculator`:"

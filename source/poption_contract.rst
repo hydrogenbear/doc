@@ -43,7 +43,7 @@ Poption的收益函数代表着poption持有人在智能合约中所拥有的资
 
 铸造/销毁
 ----------------
-任何人都可以通过将底层资产锁定到 popion 合约中来铸造 popion。 从 1 个单位的底层资产中可以铸造出收益始终为 1 的 poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以销毁他恒定收益的 poption，以赎回相同数量的底层资产。在 poption app 中在 poption 的 Mint/Burn 标签页中可以找到相关的功能界面。如下图所示：
+任何人都可以通过将底层资产锁定到 poption 合约中来铸造 poption。 从 1 个单位的底层资产中可以铸造出收益始终为 1 的 poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以销毁他恒定收益的 poption，以赎回相同数量的底层资产。在 poption app 中在 poption 的 Mint/Burn 标签页中可以找到相关的功能界面。如下图所示：
 
 .. image:: ../images/mint_burn.png
     :align: center

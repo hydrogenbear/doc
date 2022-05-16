@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-11 14:34+0800\n"
+"POT-Creation-Date: 2022-05-15 16:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,41 +19,63 @@ msgstr ""
 
 #: ../../source/poption_contract.rst:4
 msgid "poption合约概述"
-msgstr ""
+msgstr "Poption Contract"
 
 #: ../../source/poption_contract.rst:5
 msgid "在了解一些poption的应用场景之后我们可以回过头在来更进一步了解一下poption合约。"
 msgstr ""
+"After learning some of the application scenarios of poption, let's go "
+"back and learn more about poption contracts."
 
 #: ../../source/poption_contract.rst:8
 msgid "Poption的属性"
-msgstr ""
+msgstr "Attributes of Poption"
 
 #: ../../source/poption_contract.rst:9
 msgid "Potpion智能中有三个重要属性，预言机、底层资产类型、到期时间。在poption在到期时，poption智能合约会从预言机中获取当前价格作为结算价格。在poption到期后，持有人可以行权，当他们行权时，智能合约会将结算价格代入持有者的收益曲线函数中，并将对应函数输出值的底层资产转入持有者账户中。"
 msgstr ""
+"There are three important attributes in poption smart contracts, the "
+"price oracle, the underlying asset, and the expiration time. At the "
+"**expiration time**, the poption smart contract takes the current price "
+"from the **price oracle** as the settlement price. After the poption "
+"expires, holders can exercise their options. The smart contract will "
+"substitutes the settlement price into the holder's payoff function and "
+"transfers the **underlying asset** whose amount is the function output "
+"into the holder's address."
 
 #: ../../source/poption_contract.rst:14
 msgid "收益函数和收益令牌"
-msgstr ""
+msgstr "Payoff Functions and Payoff Tokens"
 
 #: ../../source/poption_contract.rst:15
 msgid ""
 "Poption的收益函数代表着poption持有人在智能合约中所拥有的资产。它的输入是结算价格，它的输出是持有人在poption到期时应收到的标的资产数量。持有的收益函数越大，在到期时所能获得的资产越多。在"
 " poption 中所有的收益函数都会被看作是 2 个梯形和 N-2 个三角形的组合。"
 msgstr ""
+"The customizable payoff function plays a key role in poption contract.Its"
+" input is the settlement price, and its output is the amount of "
+"underlying assets the holder should receive after the poption's "
+"expiration. All the payoff functions in poption will be split into 2 "
+"trapezoids and N-2 triangles."
 
 #: ../../source/poption_contract.rst:17
 msgid "比如通过一个单位的底层资产铸造的常数收益会被切分成如下形状："
 msgstr ""
+"For example, the constant payoff function of the poption minted by a unit"
+" of the underlying asset would be split into the following shapes:"
 
 #: ../../source/poption_contract.rst:22
 msgid "比如一个对冲无常损失的收益会被切分成如下形状："
 msgstr ""
+"The payoff function of a poption hedging an impermanent loss would be "
+"split into the following shapes."
 
 #: ../../source/poption_contract.rst:27
 msgid "这些三角形和梯形可以独立地代表不同的收益，以下是一系列单位高度的这些三角形和梯形的收益曲线："
 msgstr ""
+"These triangles and trapezoids can independently represent different "
+"payoff functions, The figure below illustrate the payoff functions of "
+"these triangles and trapezoids with unit height:"
 
 #: ../../source/poption_contract.rst:32
 msgid ""
@@ -63,6 +85,16 @@ msgid ""
 "的关系以如下方式严格定义。在该定义下，在行权时，当结算价格为 :math:`slot_i` 的时候，持有人总能得到 "
 ":math:`balance_i` 的底层资产："
 msgstr ""
+"We can view these trapezoids and triangles as tokens, then the payoff "
+"function is tokenized. Our poption contract is an ERC1155 contract that "
+"stores the heights of these triangles and trapezoids in the form token "
+"balances. We call these tokens **payoff tokens**. There will be N "
+"different payoff tokens in a poption contract, N is a constant and most "
+"current poption contracts have N of 16. The relation between payoff and "
+"payoff token balances :math:`balance_i` are rigorously defined in the "
+"following formula. Under this definition, the holder always receives the "
+"underlying asset of :math:`balance_i` when the settlement price is "
+":math:`slot_i` when the poption is settled."
 
 #: ../../source/poption_contract.rst:34
 msgid ""
@@ -78,6 +110,9 @@ msgstr ""
 #: ../../source/poption_contract.rst:40
 msgid "其中 :math:`slot_i` 是梯形和三角形顶点的x坐标（价格），它被储存在合约的 ``slots`` 变量中，且一旦初始化就无法被改变的。"
 msgstr ""
+":math:`slot_i` is the x-coordinate (price) of the trapezoid and triangle "
+"vertices, which is stored in the contract's ``slots`` variable and cannot"
+" be modified after initialization."
 
 #: ../../source/poption_contract.rst:42
 msgid ""
@@ -86,29 +121,40 @@ msgid ""
 "<https://polygonscan.com/token/0xD6Dcb2eE2D996620c8CC948f5425C223792eDF9d?a=0xfdd6a9c9201c36b6f9c9533a8859818dde6c9a72#inventory>`_"
 " 。"
 msgstr ""
+"We can check the balance of these payoff tokens in Etherscan. "
+"`https://polygonscan.com/token/<poption_address>?a=<holder_address> "
+"<https://polygonscan.com/token/0xD6Dcb2eE2D996620c8CC948f5425C223792eDF9d?a=0xfdd6a9c9201c36b6f9c9533a8859818dde6c9a72#inventory>`_."
 
 #: ../../source/poption_contract.rst:45
 msgid "铸造/销毁"
-msgstr ""
+msgstr "Mint/Burn"
 
 #: ../../source/poption_contract.rst:46
 msgid ""
-"任何人都可以通过将底层资产锁定到 popion 合约中来铸造 popion。 从 1 个单位的底层资产中可以铸造出收益始终为 1 的 "
+"任何人都可以通过将底层资产锁定到 poption 合约中来铸造 poption。 从 1 个单位的底层资产中可以铸造出收益始终为 1 的 "
 "poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以销毁他恒定收益的 poption，以赎回相同数量的底层资产。在 poption"
 " app 中在 poption 的 Mint/Burn 标签页中可以找到相关的功能界面。如下图所示："
 msgstr ""
+"Anyone can mint poption by depositing the underlying assets in a poption smart "
+"contract. A poption with a constant payoff of 1 can be minted from 1 unit"
+" of underlying assets, which also means all payoff tokens in 1 unit are minted. "
+"The holder can also burn his poption with constant payoff to redeem "
+"the underlying assets. The relevant app interface can be"
+" found in the poption app in the Mint/Burn page of the poption. As shown "
+"in the screenshot below."
+
 
 #: ../../source/poption_contract.rst:53
 msgid "移交"
-msgstr ""
+msgstr "Transfer"
 
 #: ../../source/poption_contract.rst:54
 msgid "收益令牌作为一种ERC1155是可以被移交的。在移交的功能的基础上我们可以构建自动做市商。"
-msgstr ""
+msgstr "Payoff token can be transfered as ERC1155 or by poption native interface which would be used by auto market maker."
 
 #: ../../source/poption_contract.rst:59
 msgid "行权"
-msgstr ""
+msgstr "Exercise"
 
 #: ../../source/poption_contract.rst:60
 msgid ""
@@ -117,38 +163,47 @@ msgid ""
 "<https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_ "
 "，具体的操作可以参考 :ref:`settle` 。"
 msgstr ""
+"Poption minted and burned in the method described above is fully collateralized. "
+"The amount of all the underlying tokens needed to exercise the poption is always equal to the total amount of tokens deposited in the contract. "
+"All holders are able to receive the payoff of their poption in any case. Learn more in :ref:`settle` and `White Paper "
+"<https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_. "
 
 #: ../../source/poption_contract.rst:63
 msgid "前端界面"
-msgstr ""
+msgstr "App Interface"
 
 #: ../../source/poption_contract.rst:65
 msgid "合约列表"
-msgstr ""
+msgstr "Contract List"
 
 #: ../../source/poption_contract.rst:70
 msgid "属性栏"
-msgstr ""
+msgstr "Contract Attributes"
 
 #: ../../source/poption_contract.rst:71
 msgid "绿框中的是底层资产，括号中的数字是App连接的钱包中的底层资产数量。虚线框中的是poption相关合约地址。"
-msgstr ""
+msgstr "The green boxes contain information about the underlying asset, "
+"and the number in brackets is the number of underlying assets in the wallet. "
+"The dotted box contains the address information of the poption smart contract and the underlying token smart contract."
 
 #: ../../source/poption_contract.rst:73
 msgid "红框中的是预言机，括号中的数字是当前预言机中的价格。虚线框中的是预言机相关合约地址。"
-msgstr ""
+msgstr "The red boxes contain information about the price oracle, "
+"and the number in brackets is the spot price in the oracle. "
+"The dotted box containes the address information of the oracle smart contract and its information source smart contract."
 
 #: ../../source/poption_contract.rst:75
 msgid "蓝框中的是到期日期，虚线框中的是到期时间和一些其他和合约相关的时间。"
-msgstr ""
+msgstr "The blue boxes contain information about the time, "
+"The dotted box contains contains information about the market close time, expiration time, etc."
 
 #: ../../source/poption_contract.rst:81
 msgid "收益函数相关"
-msgstr ""
+msgstr "Payoff Related"
 
 #: ../../source/poption_contract.rst:82
 msgid "在Swap功能页面中上部分有一个balance图表，它代表了用户持有的收益曲线："
-msgstr ""
+msgstr "In the top middle of the 'swap' page there is a balance chart, which illustrates the payoff function of the poption of the user."
 
 msgid "balance"
 msgstr ""
@@ -156,4 +211,13 @@ msgstr ""
 #: ../../source/poption_contract.rst:88
 msgid "在Swap功能页面最下方 Detail 栏中可以查看每个收益令牌的详细信息："
 msgstr ""
+"Detailed information about each payoff token can be found in the 'detail' card hidden at the bottom of the 'swap' page."
+
+#~ msgid ""
+#~ "任何人都可以通过将底层资产锁定到 popion 合约中来铸造 popion。 从 "
+#~ "1 个单位的底层资产中可以铸造出收益始终为 1 的 "
+#~ "poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以销毁他恒定收益的 "
+#~ "poption，以赎回相同数量的底层资产。在 poption app 中在 poption"
+#~ " 的 Mint/Burn 标签页中可以找到相关的功能界面。如下图所示："
+#~ msgstr ""
 

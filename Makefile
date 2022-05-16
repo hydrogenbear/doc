@@ -14,6 +14,10 @@ help:
 
 .PHONY: help Makefile
 
+en: gettext
+	sphinx-intl update -p build/gettext -l en
+	@$(SPHINXBUILD) -b html -D language=en -D html_search_language=en source _build/html/en
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile

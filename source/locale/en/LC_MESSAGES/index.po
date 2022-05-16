@@ -30,7 +30,6 @@ msgid "欢迎来到 poption 的文档!"
 msgstr "Welcome to poption documentation."
 
 #: ../../source/index.rst:9
-#, fuzzy
 msgid ""
 "`Poption <https://www.poption.exchange/>`_ "
 "是一种安全通用高效的金融衍生品，专为链上交易设计，是一个完全的分布式金融产品。Poption "
@@ -55,15 +54,15 @@ msgstr ""
 
 #: ../../source/index.rst:38
 msgid "相关链接"
-msgstr ""
+msgstr "Links"
 
 #: ../../source/index.rst:39
 msgid "`网站 <https://www.poption.exchange/>`_"
-msgstr ""
+msgstr "`Website <https://www.poption.exchange/>`_"
 
 #: ../../source/index.rst:40
 msgid "`推特 <https://twitter.com/hb_poption/>`_"
-msgstr ""
+msgstr "`Twitter <https://twitter.com/hb_poption/>`_"
 
 #: ../../source/index.rst:41
 msgid "`Github <https://github.com/Poption-DeFi/>`_"

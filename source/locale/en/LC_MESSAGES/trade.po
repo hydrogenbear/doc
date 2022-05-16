@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-14 08:25+0800\n"
+"POT-Creation-Date: 2022-05-14 21:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,23 @@ msgstr ""
 
 #: ../../source/trade.rst:4
 msgid "报价和交易"
-msgstr ""
+msgstr "Trade"
 
 #: ../../source/trade.rst:6
 msgid "我们在这里讨论poption的报价和交易机制，并介绍交易小工具中提供的相应功能。"
-msgstr ""
+msgstr "We will explain the trading mechanism of poption and introduce the trade widget in the app."
 
 #: ../../source/trade.rst:9
 msgid "交易执行过程"
-msgstr ""
+msgstr "Trade Process"
 
 #: ../../source/trade.rst:10
 msgid "在poption中我们的自动做市商可以接受收益曲线和收益曲线的交换，当我们没有足够用于交换收益时我们总是可以使用底层资产去铸造一些收益。当我们有一些收益后我们可以用一部份收益去交换其他的收益。"
 msgstr ""
+"In poption, our automated market maker swaps between poption with "
+"different payoffs and we can always lock underlying assets to mint some "
+"poption for trading. The minting and swapping are combined into a "
+"transaction that equals buying poption with underlying asset."
 
 #: ../../source/trade.rst:12
 msgid ""
@@ -40,56 +44,86 @@ msgid ""
 "，再用其中一部分收益和自动做市商交换。换回的收益加上之前未交易出去的收益加起来变成了我们目标希望获得的收益。整个过程就好像我们用了 30 USDC"
 " 去购买了这样一个 poption。以下是一张示意图，在交易的时候我们可以在 APP 界面的中上方看到它。"
 msgstr ""
+"In the :ref:`leverage example <leverage_example>` , we use about 30 USDC "
+"to buy a poption that equal to a 4x leveraged margin buying. In the "
+"transaction, we first mint a poption with a constant payoff 30 with 30 "
+"USDC, then we swap parts of the poption with the auto market maker. After"
+" the transaction, we will get poption with our target payoff.Here is a "
+"diagram, which we can see in the top middle of the swap page when "
+"trading."
 
 #: ../../source/trade.rst:17
 msgid ""
 "红色是当前收益，绿色是交易后的收益，两种颜色不重叠的部分就是需要从做市商处交换的 poption 。 由于我们不持有 "
 "poption，在交易前我们需要先使用底层资产铸造所需的 poption（深红色线）。这个交易最终表现为支付底层资产买入沽空的 poption。"
 msgstr ""
+"The red area is the current payoff, the green area is the payoff after "
+"transaction, the disjoint part of the two colors is the poption that "
+"needs to be swaped with market maker. We need to mint the red area with "
+"some underlying asset before the transaction. This transaction can be "
+"expressed as the buying poption with the underlying asset."
 
 #: ../../source/trade.rst:20
 msgid "在这个交易方法中，用户不用去交换自己已经有的收益，这会提高资金效率并降低交易的综合费率。"
 msgstr ""
+"In the transaction, we do not swap the part of portion we already have, "
+"which will improve capital efficiency and reduce the overall fee rate of "
+"the transaction."
 
 #: ../../source/trade.rst:23
 msgid "成本和费率计算"
-msgstr ""
+msgstr "Cost and Fee"
 
 #: ../../source/trade.rst:24
 msgid ""
 "由于实质被交易的是两个不同的收益曲线，真正用于交易的过程较为复杂且不便于描述。为了便于使用，我们引入了等价成本的概念。等价成本是铸造并交易后获得poption所需要的最少的底层资产。当用户使用时，他会觉得自己使用了这些底层资产去换得这些poption，尽管一部分poption其实是直接铸造获得的。这一成本概念也与市面上"
 " 其他的金融产品一致，这也能方便用户在不同的金融产品间比较。"
 msgstr ""
+"Since swaping between two poptions is complex and not easy to describe "
+"the cost directly, we introduced the concept of equivalence cost. The "
+"equivalence cost is the minimum amount of underlying assets required to "
+"complete the minting and swapping transaction when there is no poption in"
+" the address before the transaction. The equivalence cost in poption is "
+"equal to the premium of a European option, which is convenient for us to "
+"compare between different derivatives."
 
 #: ../../source/trade.rst:27
 msgid "在引入等价成本之后我们再引入等价费率，等价费率是收费情况下当前等价成本较无费用情况下的等价成本上升的成本的比率，用数学公式表示就是："
 msgstr ""
+"we can introduce the equivalence fee rate based on the equivalence cost. "
+"The equivalence fee rate is the ratio of the current equivalence cost "
+"with fee and the equivalence cost without fee minus one, expressed in a "
+"mathematical formula as:"
 
 #: ../../source/trade.rst:29
 msgid ""
 "等价费率=\\dfrac{等价成本}{无费用情况下的等价成本} - 1\n"
 "\n"
 msgstr ""
+"\\gamma=\\dfrac{cost}{cost_{without\\: fee}} - 1\n"
+"\n"
 
 #: ../../source/trade.rst:33
 msgid "基于同样的方法，我们也可以引入等价滑点损失，等价滑点损失是当前等价成本较无滑点损失的情况下的等价成本上升的成本的比率，用数学公式表示就是："
 msgstr ""
+"we can introduce the equivalence slippage rate in similar way. The "
+"equivalence slippage is the ratio of the current equivalence cost with "
+"slippage and the equivalence cost without slippage minus one, expressed "
+"in a mathematical formula as:"
 
 #: ../../source/trade.rst:35
-msgid "用数学公式表示就是："
-msgstr ""
-
-#: ../../source/trade.rst:37
 msgid ""
 "等价费率=\\dfrac{等价成本}{无滑点情况下的等价成本} - 1\n"
 "\n"
 msgstr ""
+"\\theta=\\dfrac{cost}{cost_{without\\: slippage}} - 1\n"
+"\n"
 
-#: ../../source/trade.rst:41
+#: ../../source/trade.rst:39
 msgid "额外费用"
-msgstr ""
+msgstr "Extra fee"
 
-#: ../../source/trade.rst:42
+#: ../../source/trade.rst:40
 msgid ""
 "在poption中为了节省gas费用，前端 App "
 "会负责生成一个以最小的代价获得最大回报的刚好能够被做市商接收的交易，链上自动做市商在接收到交易请求后会去计算这个交易是否足够好从而能被接受，如果不能被接受则需要拒绝这个交易。然而这种配合需要App上获取的信息和链上完全一致才能完美实现。而事实上这很难做到，比如在同一个块中，既有现货市场交易改变了现货价格，又有poption交易，poption交易定价依赖现货价格。前端App很难了解正在出块的链上信息。因此App向"
@@ -97,32 +131,45 @@ msgid ""
 "自动做市商合约提交的交易就有可能因为支付不足而被拒绝。此外计算过程中的舍入误差的微小差异也可能导致链下计算合法的交易在链上变得不合法。解决办法是我们可以向自动做市商支付一小笔额外费用来"
 " 保证即便价格出现些许波动依然交易依然能被自动做市商接受。"
 msgstr ""
+"In poption, the auto market maker smart contract will only validate the "
+"transaction to save gas cost. It is the front-end app responsibility to "
+"calculate the amount of poption to swap in the transaction. The automatic"
+" market maker will simply reject the transaction if it believes the trade"
+" is not good enough. The app shall make just good enough transactions on "
+"behalf of end users. However, this is very difficult for app that can not"
+" synchronize perfectly with the data in the chain.For example, in the "
+"same block, there are both spot market transactions that change the spot "
+"price, and poption transactions, which depend on the spot price for "
+"pricing. It is almost impossible for the app to learn the perfect "
+"information in a block under mining.Therefore the transactions submitted "
+"by the app to the automatic market maker contract are likely to be "
+"rejected due to insufficient payment. Sometimes small rounding errors may"
+" also cause transactions that are calculated in app is rejected by the "
+"contract on the chain. The solution is to pay a small extra fee to the "
+"automated market maker to ensure that transactions are still acceptable "
+"even if there is a slight price fluctuation or rounding errors."
 
-#: ../../source/trade.rst:46
+#: ../../source/trade.rst:44
 msgid "前端界面"
-msgstr ""
+msgstr "Interface in app"
 
-#: ../../source/trade.rst:47
+#: ../../source/trade.rst:45
 msgid ""
 "最后我们来看一下App中的界面。在App的右下角是交易小工具的界面。 交易小工具的第一行可以设置额外费用，默认设置是 0.001% 。 "
 "第二行是以底层资产计价的等价成本。 "
-"第三行是以预言机中另一中价格计价的等价成本，（当底层资产和预言机无关时，这行不会显示，比如底层资产为实验币的情况。) 第四行是滑点损失。 "
+"第三行是以预言机中另一种价格计价的等价成本，（当底层资产和预言机无关时，这行不会显示，比如底层资产为实验币的情况。) 第四行是滑点损失。 "
 "第五行则是费用和费率。"
 msgstr ""
+"Finally, let's take a look at the interface in the app. There is a "
+"trading widget in the bottom right corner of the swap page. The first "
+"line of the trading widget allows you to set the extra fee rate which is "
+"default by 0.001%. The second line is the equivalent cost denominated in "
+"the underlying asset. The third line is the equivalent cost denominated "
+"in another assert in the price oracle. (This line will not be displayed when "
+"the underlying asset is not related to the price oracle, such as when the"
+" underlying asset is a test coin.) The fourth line is the slippage loss "
+"rate. The fifth line shows the fees and rates."
 
-#~ msgid ""
-#~ "以 :ref:`杠杆交易中的例子<leverage_example>` 来说，我们使用了 30 "
-#~ "左右的 USDC 去购买一个能实现以 4 倍杠杆交易 Matic 的"
-#~ " poption。实际上我们首先将这 30 USDC 铸造成了收益恒为 30 "
-#~ "的 poption "
-#~ "，再用其中一部分收益和自动做市商交换。换回的收益加上之前未交易出去的收益加起来变成了我们目标希望获得的收益。整个过程就好像我们用了 "
-#~ "30 USDC 去购买了这样一个 poption。"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "以下是一张示意图，在交易的时候我们可以在 APP 界面的中上方看到它。图中红色和深绿色部分是交易之前交易者持有的"
-#~ " poption，黑线表示这些 poption "
-#~ "是在这次的交易前新铸造出来的。自动做市商在交易时会收取红色部分的收益并返回绿色部分的收益。 "
-#~ "最后深绿色和绿色部分的收益是交易后交易者能得到的收益。"
+#~ msgid "用数学公式表示就是："
 #~ msgstr ""
 

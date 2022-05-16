@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/sell.rst:2
 msgid "卖出/沽空poption"
-msgstr "sell/short poption"
+msgstr "Sell/Short Poption"
 
 #: ../../source/sell.rst:4
 msgid ""
