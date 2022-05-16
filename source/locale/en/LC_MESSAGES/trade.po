@@ -23,7 +23,7 @@ msgstr "Trade"
 
 #: ../../source/trade.rst:6
 msgid "我们在这里讨论poption的报价和交易机制，并介绍交易小工具中提供的相应功能。"
-msgstr "We will explain the trading mechanism of poption and introduce the trade widget in the app."
+msgstr "We will explain trades in poption and introduce the trade widget in the app."
 
 #: ../../source/trade.rst:9
 msgid "交易执行过程"
@@ -34,8 +34,8 @@ msgid "在poption中我们的自动做市商可以接受收益曲线和收益曲
 msgstr ""
 "In poption, our automated market maker swaps between poption with "
 "different payoffs and we can always lock underlying assets to mint some "
-"poption for trading. The minting and swapping are combined into a "
-"transaction that equals buying poption with underlying asset."
+"poption for swapping. The minting and swapping are combined into a "
+"trade transaction that equals buying poption with underlying asset."
 
 #: ../../source/trade.rst:12
 msgid ""
@@ -46,22 +46,21 @@ msgid ""
 msgstr ""
 "In the :ref:`leverage example <leverage_example>` , we use about 30 USDC "
 "to buy a poption that equal to a 4x leveraged margin buying. In the "
-"transaction, we first mint a poption with a constant payoff 30 with 30 "
+"trade transaction, we first mint a poption with a constant payoff 30 with 30 "
 "USDC, then we swap parts of the poption with the auto market maker. After"
-" the transaction, we will get poption with our target payoff.Here is a "
-"diagram, which we can see in the top middle of the swap page when "
-"trading."
+" the transaction, we will get poption with the target payoff. Here is a "
+"diagram illustrating the change of the poption balance during trading."
 
 #: ../../source/trade.rst:17
 msgid ""
 "红色是当前收益，绿色是交易后的收益，两种颜色不重叠的部分就是需要从做市商处交换的 poption 。 由于我们不持有 "
 "poption，在交易前我们需要先使用底层资产铸造所需的 poption（深红色线）。这个交易最终表现为支付底层资产买入沽空的 poption。"
 msgstr ""
-"The red area is the current payoff, the green area is the payoff after "
+"The red area is the current payoff in the address, the green area is the payoff after "
 "transaction, the disjoint part of the two colors is the poption that "
 "needs to be swaped with market maker. We need to mint the red area with "
 "some underlying asset before the transaction. This transaction can be "
-"expressed as the buying poption with the underlying asset."
+"expressed as buying poption with the underlying asset."
 
 #: ../../source/trade.rst:20
 msgid "在这个交易方法中，用户不用去交换自己已经有的收益，这会提高资金效率并降低交易的综合费率。"
@@ -106,7 +105,7 @@ msgstr ""
 #: ../../source/trade.rst:33
 msgid "基于同样的方法，我们也可以引入等价滑点损失，等价滑点损失是当前等价成本较无滑点损失的情况下的等价成本上升的成本的比率，用数学公式表示就是："
 msgstr ""
-"we can introduce the equivalence slippage rate in similar way. The "
+"we can introduce the equivalence slippage rate in a similar way. The "
 "equivalence slippage is the ratio of the current equivalence cost with "
 "slippage and the equivalence cost without slippage minus one, expressed "
 "in a mathematical formula as:"
@@ -121,7 +120,7 @@ msgstr ""
 
 #: ../../source/trade.rst:39
 msgid "额外费用"
-msgstr "Extra fee"
+msgstr "Extra Fee"
 
 #: ../../source/trade.rst:40
 msgid ""
@@ -136,22 +135,22 @@ msgstr ""
 "calculate the amount of poption to swap in the transaction. The automatic"
 " market maker will simply reject the transaction if it believes the trade"
 " is not good enough. The app shall make just good enough transactions on "
-"behalf of end users. However, this is very difficult for app that can not"
-" synchronize perfectly with the data in the chain.For example, in the "
+"behalf of end users. However, this is very difficult to achieve perfectly because the app cannot"
+"be perfectly synchronized with the data on the chain. For example, in the "
 "same block, there are both spot market transactions that change the spot "
 "price, and poption transactions, which depend on the spot price for "
 "pricing. It is almost impossible for the app to learn the perfect "
-"information in a block under mining.Therefore the transactions submitted "
+"information in a block under mining. Therefore the transactions submitted "
 "by the app to the automatic market maker contract are likely to be "
 "rejected due to insufficient payment. Sometimes small rounding errors may"
-" also cause transactions that are calculated in app is rejected by the "
+" also cause transactions that are calculated in app are rejected by the "
 "contract on the chain. The solution is to pay a small extra fee to the "
 "automated market maker to ensure that transactions are still acceptable "
 "even if there is a slight price fluctuation or rounding errors."
 
 #: ../../source/trade.rst:44
 msgid "前端界面"
-msgstr "Interface in app"
+msgstr "Interface in App"
 
 #: ../../source/trade.rst:45
 msgid ""

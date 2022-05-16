@@ -91,7 +91,7 @@ msgid ""
 ":math:`p_l` 价格上限为 :math:`p_h` 。那么我们有："
 msgstr ""
 "Let the assets added into the liquidity pool be :math:`c_{in}` and :math:`a_{in}` and the assets removed be :math:`c_{out}` and :math:`a_{out}`. "
-"The price is :math:`p_0` when adding and :math:`p_1` when removing. The price range of the liquidity is from :math: `p_l` to :math:`p_h`. "
+"The price is :math:`p_0` when adding and :math:`p_1` when removing. The price range of the liquidity is from :math:`p_l` to :math:`p_h`. "
 "Then we have:"
 
 #: ../../source/il_math.rst:40
