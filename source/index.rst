@@ -30,6 +30,14 @@
    vista
    il_math
 
+.. toctree::
+   :caption: 语言
+   :maxdepth: 1
+
+   English <https://docs.poption.exchange/en>
+   中文 <https://docs.poption.exchange/zh_CN>
+
+
 白皮书
 ----------------------------------------------------------------------------------------
 * `Poption A General-Purpose Exotic Option Designed For DeFi <https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_
