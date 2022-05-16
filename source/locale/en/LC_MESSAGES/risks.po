@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, poption.org
+# This file is distributed under the same license as the poption package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poption \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 20:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/risks.rst:2
+msgid "Risks"
+msgstr ""
+
+#: ../../source/risks.rst:4
+msgid ""
+"The contracts are **NOT** audited and there may be vulnerabilities "
+"exploited by hackers. We opened all our `contract source codes "
+"<https://github.com/Poption-DeFi>`_ and there is no ‘onlyowner’ in the "
+"`Poption contract <https://github.com/Poption-DeFi/poption-"
+"contract/blob/master/contracts/Poption.sol>`_ . The contracts are also "
+"verified in Etherscan. **Do your own research** about the code."
+msgstr ""
+
+#: ../../source/risks.rst:7
+msgid ""
+"Derivative itself is very risky. If the prediction to the market is "
+"right, the investor win more, and if it is wrong the investor lose more "
+"and maybe all of his investment. But this also means high capital "
+"efficiency."
+msgstr ""
+
+#: ../../source/risks.rst:8
+msgid ""
+"The liquidity pool level is very low now, so the slippage is high. But it"
+" is still O.K. to play with a little money or add liquidity."
+msgstr ""
+
+#: ../../source/risks.rst:9
+msgid "To add liquidity is always more risky than only to swap."
+msgstr ""
+
+#~ msgid ""
+#~ "The contracts are NOT audited. But "
+#~ "we opened all our contract source "
+#~ "code and there is no ‘onlyowner’ "
+#~ "in the Poption contract. You can "
+#~ "verify this in Etherscan. If you "
+#~ "trust the code, you can swap. Or"
+#~ " you can hack us and help us"
+#~ " figure out problems in this early"
+#~ " stage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The contracts are **NOT** audited. But"
+#~ " we opened all our contract source"
+#~ " code and there is no ‘onlyowner’ "
+#~ "in the Poption contract. You can "
+#~ "verify this in Etherscan. If you "
+#~ "trust the code, you can swap. Or"
+#~ " you can hack us and help us"
+#~ " figure out problems in this early"
+#~ " stage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Derivative itself is very risky. If "
+#~ "your prediction to the market is "
+#~ "right, you win more, and if you"
+#~ " are wrong you lose more and "
+#~ "maybe all of your investment. But "
+#~ "this also means high capital efficiency."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The liquidity pool level is very "
+#~ "low now, so the slippage is high."
+#~ " But you can still play with a"
+#~ " little money or add liquidity."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The contracts are **NOT** audited. But"
+#~ " we opened all our contract `source"
+#~ " codes <https://github.com/Poption-DeFi>`_ and"
+#~ " there is no ‘onlyowner’ in the "
+#~ "`Poption contract <https://github.com/Poption-DeFi"
+#~ "/poption-contract/blob/master/contracts/Poption.sol>`_. The"
+#~ " contracts are also verified in "
+#~ "Etherscan. **Do your own research** "
+#~ "about the code."
+#~ msgstr ""
+

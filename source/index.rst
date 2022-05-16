@@ -29,6 +29,7 @@
 
    vista
    il_math
+   risks
 
 .. toctree::
    :caption: 语言

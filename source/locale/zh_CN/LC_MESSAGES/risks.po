@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, poption.org
+# This file is distributed under the same license as the poption package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poption \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 20:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/risks.rst:2
+msgid "Risks"
+msgstr "风险"
+
+#: ../../source/risks.rst:4
+msgid ""
+"The contracts are **NOT** audited and there may be vulnerabilities "
+"exploited by hackers. We opened all our `contract source codes "
+"<https://github.com/Poption-DeFi>`_ and there is no ‘onlyowner’ in the "
+"`Poption contract <https://github.com/Poption-DeFi/poption-"
+"contract/blob/master/contracts/Poption.sol>`_ . The contracts are also "
+"verified in Etherscan. **Do your own research** about the code."
+msgstr "合约 **未被** 审计，可能存在被黑客利用的漏洞。我们开放了我们的 `合约代码 <https://github.com/Poption-DeFi>`_ ，在 `poption合约 <https://github.com/Poption-DeFi/poption-"
+"contract/blob/master/contracts/Poption.sol>`_ 中也未设置超级权限。合约在Etherscan中已经被验证。请自己调查代码的安全性。"
+
+#: ../../source/risks.rst:7
+msgid ""
+"Derivative itself is very risky. If the prediction to the market is "
+"right, the investor win more, and if it is wrong the investor lose more "
+"and maybe all of his investment. But this also means high capital "
+"efficiency."
+msgstr "衍生品本身是高风险的。由于高资金效率，衍生品赢得也快输得也快，具有比现货市场更高的风险。"
+
+#: ../../source/risks.rst:8
+msgid ""
+"The liquidity pool level is very low now, so the slippage is high. But it"
+" is still O.K. to play with a little money or add liquidity."
+msgstr "当前流动性池中的资产并不多，所以滑点损失很高。但是用一些钱试试还是可以的，也可以往里添加流动性。"
+
+#: ../../source/risks.rst:9
+msgid "To add liquidity is always more risky than only to swap."
+msgstr "添加流动性总是比简单的交易更有风险。"
+
+#~ msgid ""
+#~ "The contracts are NOT audited. But "
+#~ "we opened all our contract source "
+#~ "code and there is no ‘onlyowner’ "
+#~ "in the Poption contract. You can "
+#~ "verify this in Etherscan. If you "
+#~ "trust the code, you can swap. Or"
+#~ " you can hack us and help us"
+#~ " figure out problems in this early"
+#~ " stage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The contracts are **NOT** audited. But"
+#~ " we opened all our contract source"
+#~ " code and there is no ‘onlyowner’ "
+#~ "in the Poption contract. You can "
+#~ "verify this in Etherscan. If you "
+#~ "trust the code, you can swap. Or"
+#~ " you can hack us and help us"
+#~ " figure out problems in this early"
+#~ " stage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Derivative itself is very risky. If "
+#~ "your prediction to the market is "
+#~ "right, you win more, and if you"
+#~ " are wrong you lose more and "
+#~ "maybe all of your investment. But "
+#~ "this also means high capital efficiency."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The liquidity pool level is very "
+#~ "low now, so the slippage is high."
+#~ " But you can still play with a"
+#~ " little money or add liquidity."
+#~ msgstr ""
+
