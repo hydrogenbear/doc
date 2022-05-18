@@ -56,7 +56,7 @@ msgstr "Poption consists of two main parts:"
 #: ../../source/introduction.rst:10
 msgid "poption 智能合约，它是一种 **ERC1155 协议** ，用于 管理 poption 的结余，结算和行权。"
 msgstr ""
-"Poption smart contract is an **ERC1155 protocal** that manages the balances "
+"Poption smart contract is an **ERC1155 protocol** that manages the balances "
 "and the settlement of poption. The tokens in it are called payoff tokens."
 
 
@@ -118,14 +118,6 @@ msgstr ""
 
 #~ msgid "Poption 主要由两个部分组成："
 #~ msgstr "Poption consists of two main parts:"
-
-#~ msgid "poption 智能合约，它是一种 ERC1155 协议，用于 管理 poption 的结余，结算和行权。"
-#~ msgstr ""
-#~ "Poption smart contract is an **ERC1155"
-#~ " protocal** which manages the balances "
-#~ "and the settlement of poption. The "
-#~ "tokens in it are called payoff "
-#~ "tokens."
 
 #~ msgid "poption 自动做市商，它是一种常函数自动做市商，用于 poption 之间的交易。"
 #~ msgstr ""
