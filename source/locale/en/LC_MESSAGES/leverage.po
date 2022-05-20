@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/leverage.rst:4
 msgid "杠杆交易"
-msgstr "Leverage Trading"
+msgstr "Leveraged Trading"
 
 #: ../../source/leverage.rst:6
 msgid ""
@@ -27,9 +27,9 @@ msgid ""
 "poption 中使用牛熊价差策略就是最基本的杠杆交易方法。对于不熟悉的读者来说本文将头开始介绍。我们可以从中了解如何使用 poption "
 "完成杠杆交易，并对风险转移产生一定的概念。"
 msgstr ""
-"Leverage trading with poption is much safer than trading on margin. For "
+"Leveraged trading with poption is much safer than trading on margin. For "
 "those who are familiar with option trading, using a bull/bear spread "
-"strategy is the leverage trading method in poption. For those who are "
+"strategy is the leveraged trading method in poption. For those who are "
 "not familiar with it, this article will start from the beginning. We will"
 " learn how to use poption to trade with leverage and gain a better "
 "understanding of risk transfer."
