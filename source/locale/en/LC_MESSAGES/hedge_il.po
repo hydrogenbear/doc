@@ -46,7 +46,7 @@ msgid ""
 "<https://www.poption.exchange/app/>`_ 选择 WETH/USDC-USDC的poption并点击。如图所示："
 msgstr ""
 "Suppose we want to hedge against impermanent losses in the ETH-USDC "
-"liquidity pool. Click the WETH/USDC-USDC poption card on the `app page "
+"liquidity pool. Click the WETH/USDC-USDC poption link on the `app page "
 "<https://www.poption.exchange/app/>`_ to enter the 'swap' page."
 
 #: ../../source/hedge_il.rst:19

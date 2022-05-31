@@ -13,7 +13,7 @@ Uniswap v2 或类似流动性池
 
 现在我们看一个具体的例子。假设我们要对冲的是 ETH-USDC 流动性池中无常损失。 我们在 `app页面 <https://www.poption.exchange/app/>`_ 选择 WETH/USDC-USDC的poption并点击。如图所示：
 
-.. image:: ../images/apps_eth_usdc.png
+.. image:: ../images/apps_poption_list.png
     :align: center
 
 在 poption 前端界面中我们有一系列的小工具用于快速生成各种需求下的 poption。右边第二个小工具是无常损失对冲工具。它能自动计算流动性池中的无常损失并给出对冲方案，具体的计算方法可以参考 :ref:`il_math` 。

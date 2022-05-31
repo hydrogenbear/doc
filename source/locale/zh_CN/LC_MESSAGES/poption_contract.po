@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-16 08:44+0800\n"
+"POT-Creation-Date: 2022-05-31 16:18+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid "Poption的属性"
 msgstr ""
 
 #: ../../source/poption_contract.rst:9
-msgid "Potpion智能中有三个重要属性，预言机、底层资产类型、到期时间。在poption在到期时，poption智能合约会从预言机中获取当前价格作为结算价格。在poption到期后，持有人可以行权，当他们行权时，智能合约会将结算价格代入持有者的收益曲线函数中，并将对应函数输出值的底层资产转入持有者账户中。"
+msgid "Potpion智能中有三个重要属性，底层资产、结算货币、到期时间。在poption在到期时，poption智能合约会从预言机中获取当前底层资产价格作为结算价格。在poption到期后，持有人可以行权，当他们行权时，智能合约会将结算价格代入持有者的收益曲线函数中，并将对应函数输出值的结算货币转入持有者账户中。"
 msgstr ""
 
 #: ../../source/poption_contract.rst:14
@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/poption_contract.rst:17
-msgid "比如通过一个单位的底层资产铸造的常数收益会被切分成如下形状："
+msgid "比如通过一个单位的结算货币铸造的常数收益会被切分成如下形状："
 msgstr ""
 
 #: ../../source/poption_contract.rst:22
@@ -61,7 +61,7 @@ msgid ""
 "合约，它能将这些三角形和梯形的高以令牌的结余信息的形式储存在智能合约中。这样我们就可以将不同的收益函数转化成统一的便于定价和交易的令牌，我们把这些代表收益的令牌叫做收益令牌，一个Poption合约中会有N个不同的收益令牌，N是一个常数，当前大多数的"
 " poption 合约的 N 为 16。收益和收益令牌结余  :math:`balance_i` "
 "的关系以如下方式严格定义。在该定义下，在行权时，当结算价格为 :math:`slot_i` 的时候，持有人总能得到 "
-":math:`balance_i` 的底层资产："
+":math:`balance_i` 的结算货币："
 msgstr ""
 
 #: ../../source/poption_contract.rst:34
@@ -93,8 +93,8 @@ msgstr ""
 
 #: ../../source/poption_contract.rst:46
 msgid ""
-"任何人都可以通过将底层资产锁定到 poption 合约中来铸造 poption。 从 1 个单位的底层资产中可以铸造出收益始终为 1 的 "
-"poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以销毁他恒定收益的 poption，以赎回相同数量的底层资产。在 poption"
+"任何人都可以通过将结算货币锁定到 poption 合约中来铸造 poption。 从 1 个单位的结算货币中可以铸造出收益始终为 1 的 "
+"poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以销毁他恒定收益的 poption，以赎回相同数量的结算货币。在 poption"
 " app 中在 poption 的 Mint/Burn 标签页中可以找到相关的功能界面。如下图所示："
 msgstr ""
 
@@ -131,11 +131,11 @@ msgid "属性栏"
 msgstr ""
 
 #: ../../source/poption_contract.rst:71
-msgid "绿框中的是底层资产，括号中的数字是App连接的钱包中的底层资产数量。虚线框中的是poption相关合约地址。"
+msgid "绿框中的是结算货币，括号中的数字是App连接的钱包中的结算货币数量。虚线框中的是poption相关合约地址。"
 msgstr ""
 
 #: ../../source/poption_contract.rst:73
-msgid "红框中的是预言机，括号中的数字是当前预言机中的价格。虚线框中的是预言机相关合约地址。"
+msgid "红框中的是底层资产，括号中的数字是预言机给出的底层资产当前。虚线框中的是预言机相关合约地址。"
 msgstr ""
 
 #: ../../source/poption_contract.rst:75
@@ -156,4 +156,3 @@ msgstr ""
 #: ../../source/poption_contract.rst:88
 msgid "在Swap功能页面最下方 Detail 栏中可以查看每个收益令牌的详细信息："
 msgstr ""
-

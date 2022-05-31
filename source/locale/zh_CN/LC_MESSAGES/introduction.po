@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-16 11:05+0800\n"
+"POT-Creation-Date: 2022-05-31 16:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 #: ../../source/introduction.rst:6
 msgid ""
 "同其他金融衍生品先定义衍生品所代表的权益再推导其收益，投资人通过组合不同的产品来获得自己想要的收益曲线不同。在 poption "
-"中投资者可以直接自定义收益曲线并从做市商那里获得相应收益曲线的 poption，并在 poption 到期时获得收益曲线规定的底层资产。"
+"中投资者可以直接自定义收益曲线并从做市商那里获得相应收益曲线的 poption，并在 poption 到期时获得收益曲线规定的结算货币。"
 msgstr ""
 
 #: ../../source/introduction.rst:8
@@ -86,4 +86,3 @@ msgstr ""
 #: ../../source/introduction.rst:37
 msgid ":ref:`settle`"
 msgstr ""
-

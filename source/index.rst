@@ -28,6 +28,7 @@
    :maxdepth: 1
 
    vista
+   introduce_value_to_the_chain
    il_math
    risks
 

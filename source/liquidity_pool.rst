@@ -27,7 +27,7 @@
 -----------
 我们可以在 poption 界面中向流动性池添加或移出流动性。我们在 `poption App页面 <https://www.poption.exchange/app/>`_ 中选择一个 poption 产品并点击。如图所示：
 
-.. image:: ../images/apps_2.png
+.. image:: ../images/apps_poption_list.png
     :align: center
 
 进入页面后点击Pool按钮，进入流动性池界面，如图所示：

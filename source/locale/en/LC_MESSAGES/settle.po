@@ -33,7 +33,7 @@ msgstr ""
 ":ref:`poption LP tokens <lp_tokens>`, the app will first burn his LP "
 "tokens and transfer the corresponding payoff tokens from liquidity pool "
 "to him. After that, the poption will destroy all his in-the-money payoff "
-"tokens, and transfer the corresponding underlying asset tokens from "
+"tokens, and transfer the corresponding settlement currency tokens from "
 "poption contract to him. "
 
 #: ../../source/settle.rst:12

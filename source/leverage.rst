@@ -54,7 +54,7 @@
 
 假设当前 MATIC 兑 USDC 的比例是 1.2:1，我们看涨 MATIC，我们希望在 poption 中以 4 倍杠杆做多 MATIC。我们在 `poption App页面 <https://www.poption.exchange/app/>`_ 中选择 WMATIC/USDC-USDC的poption并点击。（阅读 :ref:`poption_contract` 了解更多poption代码的信息。） 如图所示：
 
-.. image:: ../images/apps_2.png
+.. image:: ../images/apps_poption_list.png
     :align: center
 
 在 poption 前端界面中我们有一系列的小工具用于快速生成各种需求下的 poption。右边第一个小工具是期权工具。它能计算各种行权价下的期权的收益并生成一个近似的 poption，我们在这个工具中也集成了近似保证金交易的功能。
@@ -76,7 +76,7 @@ poption 收益曲线，红线是我们需要支付的成本。当价格为 0.9 �
 .. image:: ../images/trade_0.png
     :align: center
 
-我们可以选择支付底层资产或同样的poption 收益去完成这次交易，App会优先使用投资者账户中的poption，如果poption不足，投资者则需要支付相应的底层资产。在这个例子中，账户内并没有poption， 所以这次交易全部使用USDC支付，这显示在最下方的To Mint信息中。在这里To Mint的价值等于等价成本。请参考 :ref:`trade_tool` 了解更多相关信息。
+我们可以选择支付结算货币或同样的poption 收益去完成这次交易，App会优先使用投资者账户中的poption，如果poption不足，投资者则需要支付相应的结算货币。在这个例子中，账户内并没有poption， 所以这次交易全部使用USDC支付，这显示在最下方的To Mint信息中。在这里To Mint的价值等于等价成本。请参考 :ref:`trade_tool` 了解更多相关信息。
 
 讨论
 -----
