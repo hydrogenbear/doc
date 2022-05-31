@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-31 09:34+0800\n"
+"POT-Creation-Date: 2022-05-31 10:26+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,43 @@ msgid ""
 "thus enhancing the market accessibility."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:13
+#: ../../source/introduce_value_to_the_chain.rst:14
+msgid "Participants in the market"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:15
+msgid ""
+"**Speculators** Speculators creates valuable information. They can get "
+"reward when they give right prediction to the market and make the price "
+"more accurate. They shall be punishend when they give poor prediction."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:17
+msgid ""
+"**Liquidity providers** They provide liquidity to the market and "
+"lubricate the system. They earn profit from transaction fees. They will "
+"also hold positions and take the risks of poor pricing. To reduce their "
+"risks, the automatic market maker shall be able to provide a good basic "
+"prediction to the market. In the future, some strong liquidity providers "
+"may customerize their own automatic market maker."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:19
+msgid ""
+"**hedgers** They are the consumer of the valuable information. They will "
+"buy derivatives to cover their risks elsewhere and pay value to the whole"
+" system."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:21
+msgid ""
+"**arbitragers** They are also the consumer of valuable information. If "
+"the market gives good predictions, the arbitrager will carry the useful "
+"information to the off-chain market and bring the value back. However, "
+"the system will also lose value if the predictions are poor."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:23
 msgid ""
 "In legacy finance, the premium of an option is calculated based on the "
 "expectation of the payoff, which is :math:`\\int _0 ^\\infty p(x) f(x) "
@@ -88,48 +124,6 @@ msgid ""
 "to achieve our goal. We need an ecosystem, we need liquidity providers, "
 "speculators, arbitragers, and hedgers to make an efficient market and "
 "bring values to the crypto eco."
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:16
-msgid "Participants in the market"
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:17
-msgid ""
-"Only contracts alone can not create a market, participants are the key "
-"parts of a successful market."
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:19
-msgid ""
-"**Speculators** Speculators creates valuable information. They can get "
-"reward when they give right prediction to the market and make the price "
-"more accurate. They shall be punishend when they give poor prediction."
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:21
-msgid ""
-"**Liquidity providers** They provide liquidity to the market and "
-"lubricate the system. They earn profit from transaction fees. They will "
-"also hold positions and take the risks of poor pricing. To reduce their "
-"risks, the automatic market maker shall be able to provide a good basic "
-"prediction to the market. In the future, some strong liquidity providers "
-"may customerize their own automatic market maker."
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:23
-msgid ""
-"**hedgers** They are the consumer of the valuable information. They will "
-"buy derivatives to cover their risks elsewhere and pay value to the whole"
-" system."
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:25
-msgid ""
-"**arbitragers** They are also the consumer of valuable information. If "
-"the market gives good predictions, the arbitrager will carry the useful "
-"information to the off-chain market and bring the value back. However, "
-"the system will also lose value if the predictions are poor."
 msgstr ""
 
 #~ msgid ""
@@ -302,5 +296,11 @@ msgstr ""
 #~ "in the off-chain world, it would"
 #~ " be much simpler and more "
 #~ "blockchain-friendly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only contracts alone can not create "
+#~ "a market, participants are the key "
+#~ "parts of a successful market."
 #~ msgstr ""
 
