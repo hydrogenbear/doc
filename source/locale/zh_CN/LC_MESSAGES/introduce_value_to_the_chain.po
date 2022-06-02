@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-31 16:34+0800\n"
+"POT-Creation-Date: 2022-06-01 13:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,17 +51,19 @@ msgid ""
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:10
-msgid "Market as An Information Processor"
+msgid "Information Processor as a Market"
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:11
 msgid ""
 "We can view the derivative market as an information processor. It "
-"collects and processes information and provides insurance based on these "
-"information. Since it is simply an information processor, it is suitable "
-"to be hosted in a cyberspace like blockchain. In this information "
-"processing system, speculators are the imformation collectors, market "
-"makers are the processor, hedgers and arbitragers are the consumers."
+"collects and processes information and provides insurance based on this "
+"information. And in the opposite direction, we can make an information "
+"processor as a market. Since it would be simply an information processor,"
+" it is suitable to be hosted in cyberspace like a blockchain. In this "
+"information processing system, speculators are the information "
+"collectors, market makers are the processor, and hedgers and arbitragers "
+"are the consumers."
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:13
@@ -75,12 +77,10 @@ msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:15
 msgid ""
-"**Liquidity providers** They provide liquidity to the market and "
-"lubricate the system. They earn profit from transaction fees. They will "
-"also hold positions and take the risks of poor pricing. To reduce their "
-"risks, the automatic market maker shall be able to provide a good basic "
-"prediction to the market. In the future, some strong liquidity providers "
-"may customerize their own automatic market maker."
+"**Liquidity providers** They provide liquidity to the market maker which "
+"aggregates the information. The liquidity also lubricates the system. "
+"They earn profit from transaction fees. They will also hold positions and"
+" take the risks of poor pricing."
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:17
@@ -98,22 +98,94 @@ msgid ""
 "the system will also lose value if the predictions are poor."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:22
-msgid "Property of the Market"
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:23
+#: ../../source/introduce_value_to_the_chain.rst:21
 msgid ""
 "Since a market can be viewed as an information processor, we can design "
-"it within the framework of information theory to get some property that "
-"do not exists in a legacy market."
+"it within the framework of information theory, or more specifically a "
+"prediction market."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:24
+msgid "Prediction Market as a Derivative Market"
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:25
-msgid "**Naked short should be possible and safe in the market.**"
+msgid ""
+"Prediction markets (also known as betting markets, information markets, "
+"decision markets, idea futures or event derivatives) are markets where "
+"people can trade contracts that pay based on the outcomes of unknown "
+"future events. The market prices generated from these contracts can be "
+"understood as a kind of collective prediction among market participants. "
+"If the future event is based on the price of some assets, then these "
+"contracts can be viewed as some derivatives, and the prediction market "
+"becomes derivative market. The advantages and disadvantages of such a "
+"derivative market are listed as following."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:29
+#: ../../source/introduce_value_to_the_chain.rst:28
+msgid "Advantages"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:30
+msgid ""
+"The market needs no underlying asset to work. An oracle that indroduce "
+"the information about the underlying asset and a kind of currency that be"
+" used as a pledge are enough to build such a market."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:31
+msgid ""
+"It is not difficult to implement an automated market maker for such a "
+"market. The study of prediction markets is the cradle of automated market"
+" maker algorithms."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:32
+msgid ""
+"The prediction market and the European option have an isomorphic "
+"relationship, so we can migrate the pricing model of the European option "
+"to serve the prediction market. The premium of an European option is "
+"calculated based on the expectation of the payoff, and the expectation is"
+" based on the prediction of the event (the price of underlying asset on "
+"expired date), so dose a prediction market."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:33
+msgid ""
+"Prediction market is highly capital efficient. What can be more capital "
+"efficient than betting?"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:34
+msgid ""
+"There is no short squeeze in a prediction market. The responsibility is "
+"limited by the pledge."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:37
+msgid "Disadvantages"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:38
+msgid ""
+"The liquidity providers hold positions and take high risk passively, "
+"especially for black swan events. But for risk neutral investor, this "
+"should be ok."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:39
+msgid ""
+"People are not familiar with such a new design and it take time to "
+"understand the market. But everything is new in blockchain, isn't it?"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:40
+msgid ""
+"For such a new design, there must be other disadvantages we don't know "
+"and this is risky."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:43
 msgid ""
 "In legacy finance, the premium of an option is calculated based on the "
 "expectation of the payoff, which is :math:`\\int _0 ^\\infty p(x) f(x) "
@@ -132,11 +204,11 @@ msgid ""
 "bring values to the crypto eco."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:32
+#: ../../source/introduce_value_to_the_chain.rst:46
 msgid "Prediction Market as Derivative Market"
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:33
+#: ../../source/introduce_value_to_the_chain.rst:47
 msgid ""
 "Suppose we have created a prediction market that predicts the prices of "
 "some assets in the future and speculators are using this market to make "
@@ -152,3 +224,66 @@ msgid ""
 "carry the transaction from speculators on-chain to the off-chain market, "
 "thus enhancing the market accessibility."
 msgstr ""
+
+#~ msgid "Market as An Information Processor"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We can view the derivative market "
+#~ "as an information processor. It collects"
+#~ " and processes information and provides "
+#~ "insurance based on these information. "
+#~ "Since it is simply an information "
+#~ "processor, it is suitable to be "
+#~ "hosted in a cyberspace like blockchain."
+#~ " In this information processing system, "
+#~ "speculators are the imformation collectors,"
+#~ " market makers are the processor, "
+#~ "hedgers and arbitragers are the "
+#~ "consumers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Liquidity providers** They provide liquidity"
+#~ " to the market and lubricate the "
+#~ "system. They earn profit from "
+#~ "transaction fees. They will also hold"
+#~ " positions and take the risks of "
+#~ "poor pricing. To reduce their risks, "
+#~ "the automatic market maker shall be "
+#~ "able to provide a good basic "
+#~ "prediction to the market. In the "
+#~ "future, some strong liquidity providers "
+#~ "may customerize their own automatic "
+#~ "market maker."
+#~ msgstr ""
+
+#~ msgid "Property of the Market"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Since a market can be viewed as"
+#~ " an information processor, we can "
+#~ "design it within the framework of "
+#~ "information theory to get some property"
+#~ " that do not exists in a legacy"
+#~ " market."
+#~ msgstr ""
+
+#~ msgid "**Naked short should be possible and safe in the market.**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prediction market (also known as betting"
+#~ " markets, information markets, decision "
+#~ "markets, idea futures or event "
+#~ "derivatives) are exchange-traded markets "
+#~ "created for the purpose of trading "
+#~ "the outcome of events. The study "
+#~ "of prediction markets is the cradle "
+#~ "of automated market maker algorithms."
+#~ msgstr ""
+
+#~ msgid "The disadvantages of the approach:"
+#~ msgstr ""
+
