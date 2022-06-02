@@ -48,6 +48,6 @@ Derivative Market as a Service
 -----------------------------------
 There are many occasions requiring derivatives to shift risk in the world, however, not all of them can find a derivative market to meet the needs. The blockchain approach can provide a solution with a low start cost. With the help of factory contracts, people can create different derivatives and market makers in a very convenient way. The derivative market on the blockchain will finally bring pricing power to every country. Make the international finance market more equal, the world more united, and the earth more flat.
 
-Join Poption DAO
+Join Poption
 ----------------------
-I am the solo developer of poption. Poption is a derivative product that fulfills the idea of 'prediction market as derivative market' with smart contracts. People can test the product on my website. I need help and plan to form a DAO to get support. If you are interested, please search 'poption exchange' and join us.
+I am the solo developer of poption. Poption is a derivative product that fulfills the idea of 'prediction market as derivative market' with smart contracts. People can test the product on the website. I need help to complete the full plan and is forming a DAO to get long term support. If you are interested in us, please search 'poption exchange' and join us.
