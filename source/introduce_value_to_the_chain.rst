@@ -2,7 +2,7 @@ On-Chain Derivative Market Will Introduce New Value To the Crypto
 =====================================================================
 In this cold crypto winter, let's consider the future of the ecosystem. The ecosystem needs to create more value to grow up. Algorithm stable coin can not create value from void. How about others? Someone says NTF, someone says metaverse. Yes, they have potential, but I believe that finance is still the most potential area because of its high demand for trust that can be provided by blockchains at a low cost.
 
-The value we are going to bring to the ecosystem is the value of derivatives. Deveritives provides tools to manage the risk and speculate with high capital efficiency. For example, we can hedge against the fluctuation of foreign exchange rates via foreign exchange options, or speculate an off-chain stock efficiently.
+The value we are going to bring to the ecosystem is the value of derivatives. Derivatives provides tools to manage the risk and speculate with high capital efficiency. For example, we can hedge against the fluctuation of foreign exchange rates via foreign exchange options, or speculate an off-chain stock efficiently.
 
 Information Processor as a Market
 ---------------------------------------
