@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-09 18:09+0800\n"
+"POT-Creation-Date: 2022-06-09 21:20+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Poption NFT (Draft)"
 msgstr "Poption NFT (草稿)"
 
 #: ../../source/poption_NFT.rst:3
-#, python-format
 msgid ""
 "As we introduced earlier, the derivative market has the potential to "
 "bring new value to DeFi. Poption has a suitable architecture with smart "
@@ -31,11 +30,11 @@ msgid ""
 " explore our products (with test tokens or true money). These NFTs will "
 "be minted when users complete certain tasks in poption. They can be "
 "traded on-chain. All owners and minters of the NFTs will be able to "
-"redeem 20% of the poption tokens in the future."
+"redeem 10% of the poption tokens in the future."
 msgstr ""
 "Poption 具有适合智能合约的架构，但它不是非常传统的衍生产品。为了让人们更多地了解 popion，我们将发行 NFT "
 "来激励用户探索我们的产品（使用测试代币或稳定币）。当用户完成某些任务时，这些 NFT 将被铸造出来。它们可以在链上交易。NFT "
-"的所有所有者和铸币者将能够在未来兑换 20% 的 popion 代币。"
+"的所有所有者和铸币者将能够在未来兑换 10% 的 popion 代币。"
 
 #: ../../source/poption_NFT.rst:5
 msgid ""
@@ -126,11 +125,10 @@ msgid ""
 msgstr "公允价格计算算法及代码需在兑换前一个月开源并向社区公开。"
 
 #: ../../source/poption_NFT.rst:23
-#, python-format
 msgid ""
-"All NFT tokens can redeem 20% of all poption tokens. If the system works "
-"well, the fraction may increase to 30%."
-msgstr "所有 NFT 代币可以兑换总计 popion 代币的 20%。如果系统运行良好，该比例可能会增加到 30%。"
+"All NFT tokens can redeem 10% of all poption tokens. If the system works "
+"well, the fraction may increase to 20%."
+msgstr "所有 NFT 代币可以兑换总计 popion 代币的 10%。如果系统运行良好，该比例可能会增加到 20%。"
 
 #: ../../source/poption_NFT.rst:24
 #, python-format

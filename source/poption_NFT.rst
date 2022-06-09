@@ -1,6 +1,6 @@
 Poption NFT (Draft)
 ===========================
-As we introduced earlier, the derivative market has the potential to bring new value to DeFi. Poption has a suitable architecture with smart contracts but it is not a very traditional derivative. To make people learn more about poption, we are going to issue NFTs to motivate users to explore our products (with test tokens or true money). These NFTs will be minted when users complete certain tasks in poption. They can be traded on-chain. All owners and minters of the NFTs will be able to redeem 20% of the poption tokens in the future.
+As we introduced earlier, the derivative market has the potential to bring new value to DeFi. Poption has a suitable architecture with smart contracts but it is not a very traditional derivative. To make people learn more about poption, we are going to issue NFTs to motivate users to explore our products (with test tokens or true money). These NFTs will be minted when users complete certain tasks in poption. They can be traded on-chain. All owners and minters of the NFTs will be able to redeem 10% of the poption tokens in the future.
 
 Poption NFT is a kind of Game-Fi, so have fun. A little difference is people can learn general derivative knowledge and ideas when they 'play' with poption.
 
@@ -20,7 +20,7 @@ Principals for Redeem
 #. The fair price of an NFT is related to its creation time. The less NFTs are minted in a time period (e.g. a week), the higher the fair price of the NFTs. This generally equates to the earlier the NFT is minted, the higher its fair price.
 #. The owners who are also the minter of the NFT shall lock the 1/10 of the fair price for a period of time (e.ge. 2 weeks) before the redeeming.
 #. The fair price calculating algorithm and codes shall be open-sourced and viewed by the community a month before the redeeming.
-#. All NFT tokens can redeem 20% of all poption tokens. If the system works well, the fraction may increase to 30%.
+#. All NFT tokens can redeem 10% of all poption tokens. If the system works well, the fraction may increase to 20%.
 #. The NFT owners will take 70% of all value and the minter will take the rest 30% in redeeming.
 
 NFT as An Airdrop

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-09 18:09+0800\n"
+"POT-Creation-Date: 2022-06-09 21:20+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid ""
 " explore our products (with test tokens or true money). These NFTs will "
 "be minted when users complete certain tasks in poption. They can be "
 "traded on-chain. All owners and minters of the NFTs will be able to "
-"redeem 20% of the poption tokens in the future."
+"redeem 10% of the poption tokens in the future."
 msgstr ""
 
 #: ../../source/poption_NFT.rst:5
@@ -119,8 +119,8 @@ msgstr ""
 #: ../../source/poption_NFT.rst:23
 #, python-format
 msgid ""
-"All NFT tokens can redeem 20% of all poption tokens. If the system works "
-"well, the fraction may increase to 30%."
+"All NFT tokens can redeem 10% of all poption tokens. If the system works "
+"well, the fraction may increase to 20%."
 msgstr ""
 
 #: ../../source/poption_NFT.rst:24
@@ -285,5 +285,12 @@ msgstr ""
 #~ "plan. (You will be able to mint"
 #~ " NTFs because of your meaningful "
 #~ "interaction. So just do it.)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All NFT tokens can redeem 20% of"
+#~ " all poption tokens. If the system"
+#~ " works well, the fraction may "
+#~ "increase to 30%."
 #~ msgstr ""
 
