@@ -24,11 +24,16 @@
    il_calculator
 
 .. toctree::
+   :caption: 社区建设
+   :maxdepth: 1
+
+   poption_NFT
+
+.. toctree::
    :caption: 参考文档
    :maxdepth: 1
 
    vista
-   introduce_value_to_the_chain
    il_math
    risks
 

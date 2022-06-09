@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-16 19:48+0800\n"
+"POT-Creation-Date: 2022-06-09 18:08+0800\n"
 "PO-Revision-Date: 2022-05-11 14:34+0800\n"
 "Last-Translator: Hydrogen Bear<hydrogenbear@poption.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,18 +22,22 @@ msgid "操作指南"
 msgstr "Guide"
 
 #: ../../source/index.rst:26
+msgid "社区建设"
+msgstr "DAO"
+
+#: ../../source/index.rst:32
 msgid "参考文档"
 msgstr "Reference"
 
-#: ../../source/index.rst:33
+#: ../../source/index.rst:40
 msgid "English"
 msgstr ""
 
-#: ../../source/index.rst:33
+#: ../../source/index.rst:40
 msgid "中文"
 msgstr ""
 
-#: ../../source/index.rst:33
+#: ../../source/index.rst:40
 msgid "语言"
 msgstr "Language"
 
@@ -54,33 +58,33 @@ msgstr ""
 "speculation, etc. Like a small spark, it will bring more freedom and "
 "equality in finance to the world."
 
-#: ../../source/index.rst:42
+#: ../../source/index.rst:49
 msgid "白皮书"
 msgstr "White Paper"
 
-#: ../../source/index.rst:43
+#: ../../source/index.rst:50
 msgid ""
 "`Poption A General-Purpose Exotic Option Designed For DeFi "
 "<https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_"
 msgstr ""
 
-#: ../../source/index.rst:46
+#: ../../source/index.rst:53
 msgid "相关链接"
 msgstr "Links"
 
-#: ../../source/index.rst:47
+#: ../../source/index.rst:54
 msgid "`网站 <https://www.poption.exchange/>`_"
 msgstr "`Website <https://www.poption.exchange/>`_"
 
-#: ../../source/index.rst:48
+#: ../../source/index.rst:55
 msgid "`推特 <https://twitter.com/hb_poption/>`_"
 msgstr "`Twitter <https://twitter.com/hb_poption/>`_"
 
-#: ../../source/index.rst:49
+#: ../../source/index.rst:56
 msgid "`Github <https://github.com/Poption-DeFi/>`_"
 msgstr ""
 
-#: ../../source/index.rst:50
+#: ../../source/index.rst:57
 msgid "`Discord <https://discord.gg/wGeWbmTMu5/>`_"
 msgstr ""
 

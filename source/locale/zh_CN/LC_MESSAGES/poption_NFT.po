@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, poption.org
+# This file is distributed under the same license as the poption package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poption \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-09 18:09+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/poption_NFT.rst:2
+msgid "Poption NFT (Draft)"
+msgstr "Poption NFT (草稿)"
+
+#: ../../source/poption_NFT.rst:3
+#, python-format
+msgid ""
+"As we introduced earlier, the derivative market has the potential to "
+"bring new value to DeFi. Poption has a suitable architecture with smart "
+"contracts but it is not a very traditional derivative. To make people "
+"learn more about poption, we are going to issue NFTs to motivate users to"
+" explore our products (with test tokens or true money). These NFTs will "
+"be minted when users complete certain tasks in poption. They can be "
+"traded on-chain. All owners and minters of the NFTs will be able to "
+"redeem 20% of the poption tokens in the future."
+msgstr ""
+"Poption 具有适合智能合约的架构，但它不是非常传统的衍生产品。为了让人们更多地了解 popion，我们将发行 NFT "
+"来激励用户探索我们的产品（使用测试代币或稳定币）。当用户完成某些任务时，这些 NFT 将被铸造出来。它们可以在链上交易。NFT "
+"的所有所有者和铸币者将能够在未来兑换 20% 的 popion 代币。"
+
+#: ../../source/poption_NFT.rst:5
+msgid ""
+"Poption NFT is a kind of Game-Fi, so have fun. A little difference is "
+"people can learn general derivative knowledge and ideas when they 'play' "
+"with poption."
+msgstr "Poption NFT 是一种 Game-Fi，所以玩得开心。和其他游戏不同的是，人们在“玩”poption时可以学习一些通用的衍生品金融知识。"
+
+#: ../../source/poption_NFT.rst:8
+msgid "Rules"
+msgstr "规则"
+
+#: ../../source/poption_NFT.rst:9
+msgid ""
+"After a user completes certain game tasks, he can mint NFT. The NFT will "
+"carry minting information and game task information. Including minter, "
+"create time, task name, task attributes, etc. All these information form "
+"the traits of the NFT."
+msgstr ""
+"用户完成某些任务后，可以铸造 NFT。NFT 将携带铸币信息和游戏任务信息。包括铸币者、创建时间、任务名称、任务属性等。所有这些信息构成了 NFT"
+" 的特征。这些信息将直接记录于合约内。"
+
+#: ../../source/poption_NFT.rst:10
+msgid ""
+"After completing the minting, the minter shall give a price to the NFT. "
+"The price information will be stored in the smart contract."
+msgstr "铸币完成后，铸币者将给 NFT 一个价格。价格信息将存储在智能合约中。"
+
+#: ../../source/poption_NFT.rst:11
+msgid ""
+"An investor can buy the NFT and pay the price via transacting with the "
+"smart contract. The investor becomes the new owner of the NFT."
+msgstr "投资者可以通过在智能合约支付价格来购买 NFT 并成为 NFT 新的持有人。"
+
+#: ../../source/poption_NFT.rst:12
+msgid ""
+"The new owner shall also give a price to the NFT and lock 1/10 of the "
+"price into the contract. The new owner can change the price at any time. "
+"The locked asset is released when another investor buys the NFT or the "
+"owner decreases the price."
+msgstr ""
+"新的持有人也要给 NFT 一个价格，并将价格 1/10 的现金锁定在合约中。 持有人可以随时更改价格。 当另一个投资者购买 NFT "
+"或持有人主动降低价格时，锁定的资产被释放。"
+
+#: ../../source/poption_NFT.rst:16
+msgid "Principals for Redeem"
+msgstr "兑换的原则"
+
+#: ../../source/poption_NFT.rst:17
+msgid ""
+"We will give a fair price for each NFT when redeeming poption tokens. The"
+" higher the fair price of an NFT, the more poption tokens it can redeem."
+msgstr "在兑换 popion 代币时，我们将为每个 NFT 给出一个公允价格。NFT 的公允价格越高，它可以赎回的 poption 代币就越多。"
+
+#: ../../source/poption_NFT.rst:18
+msgid ""
+"The fair price of an NFT is related to the market price of NFTs of "
+"similar traits, if the prices of similar NFTs are higher, their fair "
+"price is also higher."
+msgstr "NFT 的公允价格与拥有特征相似的 NFT 的市场价格有关，如果相似 NFT 的价格越高，其公允价格也越高。"
+
+#: ../../source/poption_NFT.rst:19
+msgid ""
+"The fair price of an NFT is related to its minter, and the more evidence "
+"a minter is human, the higher the fair price of the NFT."
+msgstr "NFT 的公平价格与其铸币者有关，铸币者为人类的证据越多，NFT 的公平价格就越高。如果铸币者被证明是机器，那么 NFT 的公允价格会很低。"
+
+#: ../../source/poption_NFT.rst:20
+msgid ""
+"The fair price of an NFT is related to its creation time. The less NFTs "
+"are minted in a time period (e.g. a week), the higher the fair price of "
+"the NFTs. This generally equates to the earlier the NFT is minted, the "
+"higher its fair price."
+msgstr ""
+"NFT 的公平价格与其创建时间有关。在一段时间内（例如一周）铸造的 NFT 越少，NFT 的公平价格就越高。这一般等同于越早铸造的 "
+"NFT，其公平价格就越高。"
+
+#: ../../source/poption_NFT.rst:21
+msgid ""
+"The owners who are also the minter of the NFT shall lock the 1/10 of the "
+"fair price for a period of time (e.ge. 2 weeks) before the redeeming."
+msgstr "如果持有者同时也是 NFT 的铸造者，那么他应在赎回前锁定一段时间（例如 2 周）的公平价格的 1/10 的现金。"
+
+#: ../../source/poption_NFT.rst:22
+msgid ""
+"The fair price calculating algorithm and codes shall be open-sourced and "
+"viewed by the community a month before the redeeming."
+msgstr "公允价格计算算法及代码需在兑换前一个月开源并向社区公开。"
+
+#: ../../source/poption_NFT.rst:23
+#, python-format
+msgid ""
+"All NFT tokens can redeem 20% of all poption tokens. If the system works "
+"well, the fraction may increase to 30%."
+msgstr "所有 NFT 代币可以兑换总计 popion 代币的 20%。如果系统运行良好，该比例可能会增加到 30%。"
+
+#: ../../source/poption_NFT.rst:24
+#, python-format
+msgid ""
+"The NFT owners will take 70% of all value and the minter will take the "
+"rest 30% in redeeming."
+msgstr "NFT 所有者将获得所有兑换价值的 70%，铸币者将获得剩余的 30% 用于赎回。"
+
+#: ../../source/poption_NFT.rst:27
+msgid "NFT as An Airdrop"
+msgstr "使用NFT来实现空投"
+
+#: ../../source/poption_NFT.rst:28
+msgid ""
+"Poption NFT is a kind of airdrop, and it has some advantages over "
+"traditional airdrops."
+msgstr "Poption NFT 是一种空投，与传统的空投相比，它具有一些优势。"
+
+#: ../../source/poption_NFT.rst:30
+msgid ""
+"It delays the decision-making of who can get the airdrop and make it "
+"easier than before. In poption NFT, everyone can mint NFTs. NFTs minted "
+"in different ways will be identified by different traits. Unlike "
+"traditional airdrop, if some kinds of tokens are too easy to mint, they "
+"will be worthless in the NFT market, and their fair price will be very "
+"low and will take little share in the redeeming. On the other hand, the "
+"minters and owners who really give true value will be able to redeem more"
+" poption tokens. Airdrop becomes much easier because of the price "
+"information given by the NFT market."
+msgstr ""
+"它延迟了谁可以获得空投的决策，并使决策的难度降低。在 popion NFT 中，每个人都可以铸造 NFT。以不同方式铸造的 NFT "
+"将具有不同的特征。与传统的空投不同，如果某些NFT太容易铸造，它们在 NFT "
+"市场上将一文不值，其公允价格将非常低，在赎回中所占份额将变得很小。另一方面，给予社区真正价值的铸币者和所有者将始终能够兑换更多的poption代币。总的来说，由于"
+" NFT 市场提供的缓冲和价格信息，空投将变得容易得多。"
+
+#: ../../source/poption_NFT.rst:31
+msgid ""
+"The NFT market also increases the transparency of the airdrop. Before "
+"redeeming the poption token, the poption NFT market should be run on-"
+"chain for a long time and everyone can access the data if they are "
+"interested in it."
+msgstr ""
+"NFT 市场也增加了空投的透明度。在兑换 popion 代币之前，poption NFT "
+"市场应该在链上运行很长时间，每个人都可以访问数据。这将提高空投的透明度"
+
+#: ../../source/poption_NFT.rst:32
+msgid ""
+"The investors can be naturally introduced. If investors are interested in"
+" the project, they can buy the NFT directly."
+msgstr "投资者可以很自然的被引入。如果投资者对该项目感兴趣，可以直接购买 NFT。而社区参与者将从中受益。"
+
+#: ../../source/poption_NFT.rst:35
+msgid "Holding Cost and Its Meaning"
+msgstr "持有成本及意义"
+
+#: ../../source/poption_NFT.rst:36
+msgid ""
+"In NFT, market abuse behavior like wash trading is a big problem. We hope"
+" the poption NFTs will represent the long term value of the poption "
+"community. We need a trustful market price to show the value and "
+"calculate the fair price, so we introduce holding cost with the lock "
+"asset mechanism. With this mechanism, it is costly to keep a very high "
+"price for a lot of NFTs for a long time. Besides, the discount of the "
+"locked asset will act like property tax. Then the price in this market "
+"would be much meaningful than in other current NFT market. It would be a "
+"good mechanism in a bear market."
+msgstr ""
+"在 NFT 中，洗盘等市场操纵行为是一个问题。而我们希望 popion NFT 能够代表 popion "
+"社区的长期价值。我们需要一个可信的市场价格来显示价值和计算公平价格，所以我们引入了持有成本与锁定资产机制。使用这种机制，长时间使大量 NFT "
+"保持非常高的价格是高成本的。此外，锁定资产的利息损失也将起到财产税的作用。因此这个市场的价格将比当前其他 NFT "
+"市场的价格更有意义。在熊市中，这将是一个很好的机制。"
+
+#: ../../source/poption_NFT.rst:39
+msgid "Plan"
+msgstr "计划"
+
+#: ../../source/poption_NFT.rst:40
+msgid ""
+"Plan to finish the contract writing and some other software development "
+"this month (Jun 2022). Open the activity next month (July 2022). Welcome "
+"any discussion and suggestions about the plan. (You will be able to mint "
+"NTFs because of your contribution. So just do it.)"
+msgstr ""
+"计划在本月（2022 年 6 月）完成合同编写和其他一些软件开发。 下个月（2022 年 7 月）开启活动。 "
+"欢迎任何关于该计划的讨论和建议。（我们会奖励对社区的贡献，并以此铸造 NTF。）"
+

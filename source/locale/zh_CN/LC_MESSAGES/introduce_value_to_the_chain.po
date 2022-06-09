@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-01 13:22+0800\n"
+"POT-Creation-Date: 2022-06-04 16:59+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,10 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../source/introduce_value_to_the_chain.rst:2
-msgid "On Chain Derivative Market Will Introduce New Value to the Chain"
+msgid "On-Chain Derivative Market Will Introduce New Value To the Crypto"
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:3
-msgid ""
-"Poption is a general purpose derivative designed for blockchain. It is "
-"fully based on smart contracts. No centralized part or para chain is "
-"needed. It requires one price oracle and one asset to work. Please notice"
-" that only one but not two asset is required to work. This makes it "
-"possible to manage the risk from the asset outside the chain and this "
-"will create value in the chain."
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:5
 msgid ""
 "In this cold crypto winter, let's consider the future of the ecosystem. "
 "The ecosystem needs to create more value to grow up. Algorithm stable "
@@ -41,20 +31,20 @@ msgid ""
 "trust that can be provided by blockchains at a low cost."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:7
+#: ../../source/introduce_value_to_the_chain.rst:5
 msgid ""
 "The value we are going to bring to the ecosystem is the value of "
-"derivatives. Deveritives provides tools to manage the risk and speculate "
+"derivatives. Derivatives provides tools to manage the risk and speculate "
 "with high capital efficiency. For example, we can hedge against the "
 "fluctuation of foreign exchange rates via foreign exchange options, or "
 "speculate an off-chain stock efficiently."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:10
+#: ../../source/introduce_value_to_the_chain.rst:8
 msgid "Information Processor as a Market"
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:11
+#: ../../source/introduce_value_to_the_chain.rst:9
 msgid ""
 "We can view the derivative market as an information processor. It "
 "collects and processes information and provides insurance based on this "
@@ -66,7 +56,7 @@ msgid ""
 "are the consumers."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:13
+#: ../../source/introduce_value_to_the_chain.rst:11
 msgid ""
 "**Speculators** Speculators creates valuable information. They collect "
 "information from all over the world and make a prediction based on their "
@@ -75,7 +65,7 @@ msgid ""
 "more accurate. They shall be punishend when they give poor prediction."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:15
+#: ../../source/introduce_value_to_the_chain.rst:13
 msgid ""
 "**Liquidity providers** They provide liquidity to the market maker which "
 "aggregates the information. The liquidity also lubricates the system. "
@@ -83,14 +73,14 @@ msgid ""
 " take the risks of poor pricing."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:17
+#: ../../source/introduce_value_to_the_chain.rst:15
 msgid ""
 "**hedgers** They are the consumer of the valuable information. They will "
 "buy derivatives to cover their risks elsewhere and pay value to the whole"
 " system."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:19
+#: ../../source/introduce_value_to_the_chain.rst:17
 msgid ""
 "**arbitragers** They are also the consumer of valuable information. If "
 "the market gives good predictions, the arbitrager will carry the useful "
@@ -99,6 +89,10 @@ msgid ""
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:21
+msgid "Prediction Market as a Derivative Market"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:22
 msgid ""
 "Since a market can be viewed as an information processor, we can design "
 "it within the framework of information theory, or more specifically a "
@@ -106,10 +100,6 @@ msgid ""
 msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:24
-msgid "Prediction Market as a Derivative Market"
-msgstr ""
-
-#: ../../source/introduce_value_to_the_chain.rst:25
 msgid ""
 "Prediction markets (also known as betting markets, information markets, "
 "decision markets, idea futures or event derivatives) are markets where "
@@ -118,11 +108,16 @@ msgid ""
 "understood as a kind of collective prediction among market participants. "
 "If the future event is based on the price of some assets, then these "
 "contracts can be viewed as some derivatives, and the prediction market "
-"becomes derivative market. The advantages and disadvantages of such a "
-"derivative market are listed as following."
+"becomes derivative market."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:28
+#: ../../source/introduce_value_to_the_chain.rst:26
+msgid ""
+"The advantages and disadvantages of such a derivative market are listed "
+"as following."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:29
 msgid "Advantages"
 msgstr ""
 
@@ -142,6 +137,12 @@ msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:32
 msgid ""
+"The market can provide general-purpose products by designing proper "
+"prediction events."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:33
+msgid ""
 "The prediction market and the European option have an isomorphic "
 "relationship, so we can migrate the pricing model of the European option "
 "to serve the prediction market. The premium of an European option is "
@@ -150,79 +151,89 @@ msgid ""
 "expired date), so dose a prediction market."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:33
+#: ../../source/introduce_value_to_the_chain.rst:34
 msgid ""
 "Prediction market is highly capital efficient. What can be more capital "
 "efficient than betting?"
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:34
+#: ../../source/introduce_value_to_the_chain.rst:35
 msgid ""
 "There is no short squeeze in a prediction market. The responsibility is "
 "limited by the pledge."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:37
+#: ../../source/introduce_value_to_the_chain.rst:38
 msgid "Disadvantages"
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:38
+#: ../../source/introduce_value_to_the_chain.rst:39
 msgid ""
 "The liquidity providers hold positions and take high risk passively, "
-"especially for black swan events. But for risk neutral investor, this "
+"especially for black swan events. But for risk neutral investors, this "
 "should be ok."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:39
+#: ../../source/introduce_value_to_the_chain.rst:40
 msgid ""
 "People are not familiar with such a new design and it take time to "
 "understand the market. But everything is new in blockchain, isn't it?"
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:40
-msgid ""
-"For such a new design, there must be other disadvantages we don't know "
-"and this is risky."
+#: ../../source/introduce_value_to_the_chain.rst:41
+msgid "For such a new design, there must be some other unknown disadvantages."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:43
-msgid ""
-"In legacy finance, the premium of an option is calculated based on the "
-"expectation of the payoff, which is :math:`\\int _0 ^\\infty p(x) f(x) "
-"dx` , where :math:`f(x)` is the payoff of the option and :math:`p(x)` is "
-"the probability density function of the price at the expired date. This "
-"is exactly the same way a prediction market works. In a prediction "
-"market, a ticket is priced as the probability of its event. When a market"
-" participant holds some tickets whose payoff is :math:`f(i)` where "
-":math:`i` represents the event whose probability is :math:`p(i)`, then "
-"the cost of these tickets should be :math:`\\sum_i p(i) f(i)`. With some "
-"math trikes, it is possible to convert a prediction market to a "
-"derivative market on the chain. Acturally, we have already created one, "
-"and we call it poption. However only some smart contracts are not enough "
-"to achieve our goal. We need an ecosystem, we need liquidity providers, "
-"speculators, arbitragers, and hedgers to make an efficient market and "
-"bring values to the crypto eco."
+#: ../../source/introduce_value_to_the_chain.rst:44
+msgid "Automated Market Maker as a Hedge Fund"
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:46
-msgid "Prediction Market as Derivative Market"
+#: ../../source/introduce_value_to_the_chain.rst:45
+msgid ""
+"In prediction market theory, automated market makers buy information from"
+" the speculators, and this causes the loss of the liquidity providers. In"
+" spot markets like Uniswap, the loss is in the form of impermanent loss. "
+"In a derivative market, the loss will be permanent because of the "
+"expiration and be higher because of the higher capital efficiency. To "
+"avoid the loss, the liquidity provider shall tune the parameters in the "
+"market maker contract to give more information to avoid loss from the "
+"speculators. Imagine that there are several automated market makers in a "
+"derivative market. The market makers who can provide the lowest fee and "
+"earn the most profit will survive in the market. Tuning the market maker "
+"is highly based on the accurate prediction to the market which is very "
+"skillful and can bring value to the tuner. The tuner will act like a "
+"hedge fund manager and the automated market maker will be some kind of a "
+"hedge fund. The bigger the market is, the better manager it can attract, "
+"and the higher value they create."
 msgstr ""
 
-#: ../../source/introduce_value_to_the_chain.rst:47
+#: ../../source/introduce_value_to_the_chain.rst:48
+msgid "Derivative Market as a Service"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:49
 msgid ""
-"Suppose we have created a prediction market that predicts the prices of "
-"some assets in the future and speculators are using this market to make "
-"money. Usually, a prediction market is a zero-sum game, however, a worked"
-" prediction market can give accurate predictions of the events. And a "
-"hedger who wants to buy some insurance to shift the risk of the price "
-"change can use the prediction to price the risk. Now the speculators play"
-" the role of actuary and the prediction market becomes a derivative "
-"market that makes value. And this is a non-zero-sum game now.  We can "
-"also create value from the opposite flow. While speculators are "
-"speculating derivatives on-chain, arbitrageurs can take advantage of the "
-"spreads between on-chain and off-chain to arbitrage. This arbitrage will "
-"carry the transaction from speculators on-chain to the off-chain market, "
-"thus enhancing the market accessibility."
+"There are many occasions requiring derivatives to shift risk in the "
+"world, however, not all of them can find a derivative market to meet the "
+"needs. The blockchain approach can provide a solution with a low start "
+"cost. With the help of factory contracts, people can create different "
+"derivatives and market makers in a very convenient way. The derivative "
+"market on the blockchain will finally bring pricing power to every "
+"country. Make the international finance market more equal, the world more"
+" united, and the earth more flat."
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:52
+msgid "Join Poption"
+msgstr ""
+
+#: ../../source/introduce_value_to_the_chain.rst:53
+msgid ""
+"I am the solo developer of poption. Poption is a derivative product that "
+"fulfills the idea of 'prediction market as derivative market' with smart "
+"contracts. People can test the product on the website. I need help to "
+"complete the full plan and is forming a DAO to get long term support. If "
+"you are interested in us, please search 'poption exchange' and join us."
 msgstr ""
 
 #~ msgid "Market as An Information Processor"
@@ -285,5 +296,135 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The disadvantages of the approach:"
+#~ msgstr ""
+
+#~ msgid "On Chain Derivative Market Will Introduce New Value to the Chain"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Poption is a general purpose derivative"
+#~ " designed for blockchain. It is fully"
+#~ " based on smart contracts. No "
+#~ "centralized part or para chain is "
+#~ "needed. It requires one price oracle "
+#~ "and one asset to work. Please "
+#~ "notice that only one but not two"
+#~ " asset is required to work. This "
+#~ "makes it possible to manage the "
+#~ "risk from the asset outside the "
+#~ "chain and this will create value "
+#~ "in the chain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The value we are going to bring"
+#~ " to the ecosystem is the value "
+#~ "of derivatives. Deveritives provides tools "
+#~ "to manage the risk and speculate "
+#~ "with high capital efficiency. For "
+#~ "example, we can hedge against the "
+#~ "fluctuation of foreign exchange rates "
+#~ "via foreign exchange options, or "
+#~ "speculate an off-chain stock "
+#~ "efficiently."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prediction markets (also known as "
+#~ "betting markets, information markets, decision"
+#~ " markets, idea futures or event "
+#~ "derivatives) are markets where people "
+#~ "can trade contracts that pay based "
+#~ "on the outcomes of unknown future "
+#~ "events. The market prices generated from"
+#~ " these contracts can be understood as"
+#~ " a kind of collective prediction "
+#~ "among market participants. If the future"
+#~ " event is based on the price of"
+#~ " some assets, then these contracts "
+#~ "can be viewed as some derivatives, "
+#~ "and the prediction market becomes "
+#~ "derivative market. The advantages and "
+#~ "disadvantages of such a derivative "
+#~ "market are listed as following."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The liquidity providers hold positions "
+#~ "and take high risk passively, especially"
+#~ " for black swan events. But for "
+#~ "risk neutral investor, this should be"
+#~ " ok."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For such a new design, there must"
+#~ " be other disadvantages we don't know"
+#~ " and this is risky."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In legacy finance, the premium of "
+#~ "an option is calculated based on "
+#~ "the expectation of the payoff, which "
+#~ "is :math:`\\int _0 ^\\infty p(x) f(x)"
+#~ " dx` , where :math:`f(x)` is the "
+#~ "payoff of the option and :math:`p(x)`"
+#~ " is the probability density function "
+#~ "of the price at the expired date."
+#~ " This is exactly the same way a"
+#~ " prediction market works. In a "
+#~ "prediction market, a ticket is priced"
+#~ " as the probability of its event. "
+#~ "When a market participant holds some "
+#~ "tickets whose payoff is :math:`f(i)` "
+#~ "where :math:`i` represents the event "
+#~ "whose probability is :math:`p(i)`, then "
+#~ "the cost of these tickets should "
+#~ "be :math:`\\sum_i p(i) f(i)`. With some"
+#~ " math trikes, it is possible to "
+#~ "convert a prediction market to a "
+#~ "derivative market on the chain. "
+#~ "Acturally, we have already created one,"
+#~ " and we call it poption. However "
+#~ "only some smart contracts are not "
+#~ "enough to achieve our goal. We "
+#~ "need an ecosystem, we need liquidity "
+#~ "providers, speculators, arbitragers, and "
+#~ "hedgers to make an efficient market "
+#~ "and bring values to the crypto "
+#~ "eco."
+#~ msgstr ""
+
+#~ msgid "Prediction Market as Derivative Market"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Suppose we have created a prediction "
+#~ "market that predicts the prices of "
+#~ "some assets in the future and "
+#~ "speculators are using this market to "
+#~ "make money. Usually, a prediction market"
+#~ " is a zero-sum game, however, a"
+#~ " worked prediction market can give "
+#~ "accurate predictions of the events. And"
+#~ " a hedger who wants to buy some"
+#~ " insurance to shift the risk of "
+#~ "the price change can use the "
+#~ "prediction to price the risk. Now "
+#~ "the speculators play the role of "
+#~ "actuary and the prediction market "
+#~ "becomes a derivative market that makes"
+#~ " value. And this is a non-"
+#~ "zero-sum game now.  We can also "
+#~ "create value from the opposite flow. "
+#~ "While speculators are speculating derivatives"
+#~ " on-chain, arbitrageurs can take "
+#~ "advantage of the spreads between on-"
+#~ "chain and off-chain to arbitrage. "
+#~ "This arbitrage will carry the "
+#~ "transaction from speculators on-chain to"
+#~ " the off-chain market, thus enhancing"
+#~ " the market accessibility."
 #~ msgstr ""
 
