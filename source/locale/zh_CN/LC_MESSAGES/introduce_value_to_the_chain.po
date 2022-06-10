@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/introduce_value_to_the_chain.rst:2
 msgid "On-Chain Derivative Market Will Introduce New Value To the Crypto"
-msgstr ""
+msgstr "链上衍生品市场将给区块链带来新价值"
 
 #: ../../source/introduce_value_to_the_chain.rst:3
 msgid ""
