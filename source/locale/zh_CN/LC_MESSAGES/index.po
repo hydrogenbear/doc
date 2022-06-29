@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-16 19:48+0800\n"
+"POT-Creation-Date: 2022-06-09 18:08+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,18 +22,22 @@ msgid "操作指南"
 msgstr ""
 
 #: ../../source/index.rst:26
+msgid "社区建设"
+msgstr ""
+
+#: ../../source/index.rst:32
 msgid "参考文档"
 msgstr ""
 
-#: ../../source/index.rst:33
+#: ../../source/index.rst:40
 msgid "English"
 msgstr ""
 
-#: ../../source/index.rst:33
+#: ../../source/index.rst:40
 msgid "中文"
 msgstr ""
 
-#: ../../source/index.rst:33
+#: ../../source/index.rst:40
 msgid "语言"
 msgstr ""
 
@@ -48,33 +52,33 @@ msgid ""
 "能通过区块链为原本无法触及这些服务的用户提供对冲风险，投机交易等多种金融服务。作为一颗小小的种子为全世界金融的自由和平等带来一份力量。"
 msgstr ""
 
-#: ../../source/index.rst:42
+#: ../../source/index.rst:49
 msgid "白皮书"
 msgstr ""
 
-#: ../../source/index.rst:43
+#: ../../source/index.rst:50
 msgid ""
 "`Poption A General-Purpose Exotic Option Designed For DeFi "
 "<https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf>`_"
 msgstr ""
 
-#: ../../source/index.rst:46
+#: ../../source/index.rst:53
 msgid "相关链接"
 msgstr ""
 
-#: ../../source/index.rst:47
+#: ../../source/index.rst:54
 msgid "`网站 <https://www.poption.exchange/>`_"
 msgstr ""
 
-#: ../../source/index.rst:48
+#: ../../source/index.rst:55
 msgid "`推特 <https://twitter.com/hb_poption/>`_"
 msgstr ""
 
-#: ../../source/index.rst:49
+#: ../../source/index.rst:56
 msgid "`Github <https://github.com/Poption-DeFi/>`_"
 msgstr ""
 
-#: ../../source/index.rst:50
+#: ../../source/index.rst:57
 msgid "`Discord <https://discord.gg/wGeWbmTMu5/>`_"
 msgstr ""
 
