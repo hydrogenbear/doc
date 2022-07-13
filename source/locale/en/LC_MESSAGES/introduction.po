@@ -73,7 +73,7 @@ msgstr ""
 #: ../../source/introduction.rst:18
 msgid ":ref:`一个基于 Matic 价格采取牛市价差策略收益的 poption ，收益以 USDC 结算。<leverage>`"
 msgstr ""
-":ref:`A poption with a bullish spread strategy payoff on Matic prices, "
+":ref:`A poption with a bull spread strategy payoff on Matic prices, "
 "denominated via USDC. <leverage>`"
 
 #: ../../source/introduction.rst:23
