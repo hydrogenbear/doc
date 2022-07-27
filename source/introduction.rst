@@ -7,10 +7,10 @@ poption 的名字来源于 payoff option （收益曲线期权）和 pop option 
 
 Poption 主要由两个部分组成：
 
-* poption 智能合约，它是一种 **ERC1155 协议** ，用于 管理 poption 的结余，结算和行权。
-* poption 自动做市商，它是一种 **常函数自动做市商** ，用于 poption 之间的交易。
+* :ref:`poption 智能合约<poption_contract>`，它是一种 **ERC1155 协议** ，用于 管理 poption 的结余，结算和行权。
+* :ref:`poption 自动做市商<auto_market_maker>`，它是一种 **常函数自动做市商** ，用于 poption 之间的交易。
 
-下图是自定义 poption 曲线的几个例子，绿线是poption自定义的收益曲线。
+下图是自定义 poption 曲线的几个例子，**绿线** 是poption自定义的收益曲线。
 
 .. figure:: ../images/payoff_l_5.png
     :align: center

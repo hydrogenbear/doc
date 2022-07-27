@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-31 16:18+0800\n"
+"POT-Creation-Date: 2022-07-27 17:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,36 +26,62 @@ msgid "在了解一些poption的应用场景之后我们可以回过头在来更
 msgstr ""
 
 #: ../../source/poption_contract.rst:8
-msgid "Poption的属性"
+msgid "Brief Understanding with Example"
 msgstr ""
 
 #: ../../source/poption_contract.rst:9
+msgid "To get a Poption with some financial function. We usually take two steps."
+msgstr ""
+
+#: ../../source/poption_contract.rst:11
+msgid "Mint current asset to all possible returns in the future."
+msgstr ""
+
+#: ../../source/poption_contract.rst:12
+msgid "Swap some possible returns for other possible returns with the other."
+msgstr ""
+
+#: ../../source/poption_contract.rst:17
+msgid ""
+"Alice and Bob bet with the Ether's price. (Poption only support "
+"continuous payoff function currently.)"
+msgstr ""
+
+#: ../../source/poption_contract.rst:22
+msgid "Alice make a bull spread on Ether and Bob make a bear spread."
+msgstr ""
+
+#: ../../source/poption_contract.rst:25
+msgid "Poption的属性"
+msgstr ""
+
+#: ../../source/poption_contract.rst:26
 msgid "Potpion智能中有三个重要属性，底层资产、结算货币、到期时间。在poption在到期时，poption智能合约会从预言机中获取当前底层资产价格作为结算价格。在poption到期后，持有人可以行权，当他们行权时，智能合约会将结算价格代入持有者的收益曲线函数中，并将对应函数输出值的结算货币转入持有者账户中。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:14
+#: ../../source/poption_contract.rst:31
 msgid "收益函数和收益令牌"
 msgstr ""
 
-#: ../../source/poption_contract.rst:15
+#: ../../source/poption_contract.rst:32
 msgid ""
 "Poption的收益函数代表着poption持有人在智能合约中所拥有的资产。它的输入是结算价格，它的输出是持有人在poption到期时应收到的标的资产数量。持有的收益函数越大，在到期时所能获得的资产越多。在"
 " poption 中所有的收益函数都会被看作是 2 个梯形和 N-2 个三角形的组合。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:17
+#: ../../source/poption_contract.rst:34
 msgid "比如通过一个单位的结算货币铸造的常数收益会被切分成如下形状："
 msgstr ""
 
-#: ../../source/poption_contract.rst:22
+#: ../../source/poption_contract.rst:39
 msgid "比如一个对冲无常损失的收益会被切分成如下形状："
 msgstr ""
 
-#: ../../source/poption_contract.rst:27
+#: ../../source/poption_contract.rst:44
 msgid "这些三角形和梯形可以独立地代表不同的收益，以下是一系列单位高度的这些三角形和梯形的收益曲线："
 msgstr ""
 
-#: ../../source/poption_contract.rst:32
+#: ../../source/poption_contract.rst:49
 msgid ""
 "然后我们将这些独立的梯形和三角形视为令牌。我们的 poption 合约是一个 ERC1155 "
 "合约，它能将这些三角形和梯形的高以令牌的结余信息的形式储存在智能合约中。这样我们就可以将不同的收益函数转化成统一的便于定价和交易的令牌，我们把这些代表收益的令牌叫做收益令牌，一个Poption合约中会有N个不同的收益令牌，N是一个常数，当前大多数的"
@@ -64,7 +90,7 @@ msgid ""
 ":math:`balance_i` 的结算货币："
 msgstr ""
 
-#: ../../source/poption_contract.rst:34
+#: ../../source/poption_contract.rst:51
 msgid ""
 "f(x) = \\begin{cases} balance_0 & x < slot_0 \\\\\n"
 "balance_{i} & x = slot_{i} \\\\\n"
@@ -75,11 +101,11 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../source/poption_contract.rst:40
+#: ../../source/poption_contract.rst:57
 msgid "其中 :math:`slot_i` 是梯形和三角形顶点的x坐标（价格），它被储存在合约的 ``slots`` 变量中，且一旦初始化就无法被改变的。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:42
+#: ../../source/poption_contract.rst:59
 msgid ""
 "我们可以在Etherscan中查看在poption中持有的收益令牌结余。如 "
 "`https://polygonscan.com/token/<poption_address>?a=<holder_address> "
@@ -87,30 +113,30 @@ msgid ""
 " 。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:45
+#: ../../source/poption_contract.rst:62
 msgid "铸造/销毁"
 msgstr ""
 
-#: ../../source/poption_contract.rst:46
+#: ../../source/poption_contract.rst:63
 msgid ""
 "任何人都可以通过将结算货币锁定到 poption 合约中来铸造 poption。 从 1 个单位的结算货币中可以铸造出收益始终为 1 的 "
 "poption，也就是会铸造所有的收益令牌各 1 个。 持有人也可以销毁他恒定收益的 poption，以赎回相同数量的结算货币。在 poption"
 " app 中在 poption 的 Mint/Burn 标签页中可以找到相关的功能界面。如下图所示："
 msgstr ""
 
-#: ../../source/poption_contract.rst:53
+#: ../../source/poption_contract.rst:70
 msgid "移交"
 msgstr ""
 
-#: ../../source/poption_contract.rst:54
+#: ../../source/poption_contract.rst:71
 msgid "收益令牌作为一种ERC1155是可以被移交的。在移交的功能的基础上我们可以构建自动做市商。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:59
+#: ../../source/poption_contract.rst:76
 msgid "行权"
 msgstr ""
 
-#: ../../source/poption_contract.rst:60
+#: ../../source/poption_contract.rst:77
 msgid ""
 "因为poption是按上述方式铸造和转移的。所以它是完全抵押的。行权收益的总和始终等于合约中锁定的代币总量。所有持有人都能在任何情况下获得其持有的"
 " poption 收益。详细的理论可以参考我们的 `白皮书 "
@@ -118,41 +144,115 @@ msgid ""
 "，具体的操作可以参考 :ref:`settle` 。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:63
+#: ../../source/poption_contract.rst:80
 msgid "前端界面"
 msgstr ""
 
-#: ../../source/poption_contract.rst:65
+#: ../../source/poption_contract.rst:82
 msgid "合约列表"
 msgstr ""
 
-#: ../../source/poption_contract.rst:70
+#: ../../source/poption_contract.rst:87
 msgid "属性栏"
 msgstr ""
 
-#: ../../source/poption_contract.rst:71
+#: ../../source/poption_contract.rst:88
 msgid "绿框中的是结算货币，括号中的数字是App连接的钱包中的结算货币数量。虚线框中的是poption相关合约地址。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:73
+#: ../../source/poption_contract.rst:90
 msgid "红框中的是底层资产，括号中的数字是预言机给出的底层资产当前。虚线框中的是预言机相关合约地址。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:75
+#: ../../source/poption_contract.rst:92
 msgid "蓝框中的是到期日期，虚线框中的是到期时间和一些其他和合约相关的时间。"
 msgstr ""
 
-#: ../../source/poption_contract.rst:81
+#: ../../source/poption_contract.rst:98
 msgid "收益函数相关"
 msgstr ""
 
-#: ../../source/poption_contract.rst:82
+#: ../../source/poption_contract.rst:99
 msgid "在Swap功能页面中上部分有一个balance图表，它代表了用户持有的收益曲线："
 msgstr ""
 
 msgid "balance"
 msgstr ""
 
-#: ../../source/poption_contract.rst:88
+#: ../../source/poption_contract.rst:105
 msgid "在Swap功能页面最下方 Detail 栏中可以查看每个收益令牌的详细信息："
 msgstr ""
+
+#: ../../source/poption_contract.rst:112
+msgid "Capital Efficiency Discussion"
+msgstr ""
+
+#: ../../source/poption_contract.rst:113
+msgid ""
+"Unlike option, fully collateralized poption is capital efficient. Here is"
+" an example shows how this works."
+msgstr ""
+
+#: ../../source/poption_contract.rst:115
+msgid ""
+"Here is a diagram to show the example. The blue area shows the "
+"probability of the price of the underlying assert to be at the expiration"
+" time. The green area represents the payoff denominated in the underlying"
+" asset of one share of call option. The right side means higher price and"
+" the left side means lower price. Three vertical lines indicate the first"
+" slot of the poption, the current price and the last slot of the poption."
+msgstr ""
+
+#: ../../source/poption_contract.rst:117
+msgid ""
+"Think about the right area that represents settle price being higher than"
+" the last slot. This is very unlikely to happen. So the option write is "
+"very unlikely to pay the option holder the green area above the purple "
+"line. There are two ways the write can choose from. First one is to be "
+"fully collateralized (covered call). But it is capital inefficient. "
+"Second one is to be undercollateralized. It is capital efficient but the "
+"writer can be squeezed and liquidated. It is clear that these unlikely "
+"events introduce inefficiency or complicity to the system."
+msgstr ""
+
+#: ../../source/poption_contract.rst:119
+msgid ""
+"However poption whose payoff is the purple line, does not has this "
+"problems. It is both capital efficient and fully collateralized. In "
+"poption, we highly focus on the events and financial need in the golden "
+"box. This makes poption to be an efficient and powerful tool."
+msgstr ""
+
+#~ msgid "To get a Poption with some function. We usually take 3 steps."
+#~ msgstr ""
+
+#~ msgid "Now you hold position."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Alice and Bob bet with the "
+#~ "Ether's price (Illustrate only, Poption "
+#~ "only support continuous payoff function.)`"
+#~ msgstr ""
+
+#~ msgid ":ref:`Alice long Ether and Bob short Ether.`"
+#~ msgstr ""
+
+#~ msgid "To get a Poption with some finance function. We usually take two steps."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Alice and Bob bet with the Ether's"
+#~ " price (Illustrate only, Poption only "
+#~ "support continuous payoff function.)"
+#~ msgstr ""
+
+#~ msgid "Alice long Ether and Bob short Ether."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Alice and Bob bet with the Ether's"
+#~ " price. (Illustrate only, Poption only "
+#~ "support continuous payoff function.)"
+#~ msgstr ""
+
