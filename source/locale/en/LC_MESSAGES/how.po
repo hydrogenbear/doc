@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, poption.org
+# This file is distributed under the same license as the poption package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poption \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-27 16:31+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/how.rst:2
+msgid "How Poption works"
+msgstr ""
+
+#~ msgid "Mint current asset to all possible returns in the future."
+#~ msgstr ""
+
+#~ msgid "Swap some possible returns for other possible returns with the other."
+#~ msgstr ""
+
+#~ msgid "Now you hold position."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Alice and Bob bet with the "
+#~ "Ether's price (Illustrate only, Poption "
+#~ "only support continuous payoff function.)`"
+#~ msgstr ""
+
+#~ msgid ":ref:`Alice long Ether and Bob short Ether.`"
+#~ msgstr ""
+

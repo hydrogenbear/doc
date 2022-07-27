@@ -30,7 +30,7 @@ msgstr ""
 "In a poption, we can sell/short poption with any payoff as long as we can"
 " buy it. If we own a poption, we can sell it and get the settlement currency"
 " directly. If we want to do a 'naked short', we need to mint poption from"
-" settlement currencys first. Read :ref:`trade_tool` to learn more about "
+" settlement currency first. Read :ref:`trade_tool` to learn more about "
 "trading."
 
 #: ../../source/sell.rst:9
@@ -72,7 +72,7 @@ msgid "下图是对应的收益函数，因为我们是在沽空，因此收益�
 msgstr ""
 "The following chart is the payoff function. Because we are shorting, the "
 "payoff function is in the negative domain, and the cost is also a "
-"negative number, which actrually means we are selling the poption and "
+"negative number, which actually means we are selling the poption and "
 "buying the settlement currency."
 
 #: ../../source/sell.rst:31
@@ -82,9 +82,9 @@ msgid ""
 msgstr ""
 "In the trade card, the equivalent cost here also becomes negative. If we "
 "sell the poption, we get the settlement currency. If we don't have the "
-"poption, we shall use the settlement currencys to mint some first. It is "
-"worth to notice that in poption the naked shorting uses the exactly same "
-"mechanism as longing, so there is no liquidation risk as well. Read "
+"poption, we shall use the settlement currency to mint some first. It is "
+"worth noticing that in poption, naked shorting uses the exact same "
+"mechanism as longing, so there is no liquidation risk. Read "
 ":ref:`leverage` and :ref:`trade_tool` to learn more."
 
 #: ../../source/sell.rst:37

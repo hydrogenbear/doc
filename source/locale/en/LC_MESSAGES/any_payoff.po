@@ -57,7 +57,7 @@ msgstr ""
 
 "Substitute the 'slot' values in the table into :math:`f(x)` to get the y-values of the payoff function at each slot point. "
 "Copy those values back to the 'Poption To Buy' column of the table, "
-"If the valuse is in json, using the PASTE VALUE button is very convenient. "
+"If the values are in json, using the PASTE VALUE button is very convenient. "
 "There is a figure showing the whole process below. "
 
 #: ../../source/any_payoff.rst:23

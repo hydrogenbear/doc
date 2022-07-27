@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poption \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-31 16:04+0800\n"
+"POT-Creation-Date: 2022-07-27 14:50+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,15 +40,19 @@ msgid "Poption 主要由两个部分组成："
 msgstr ""
 
 #: ../../source/introduction.rst:10
-msgid "poption 智能合约，它是一种 **ERC1155 协议** ，用于 管理 poption 的结余，结算和行权。"
+msgid ""
+":ref:`poption 智能合约<poption_contract>`，它是一种 **ERC1155 协议** ，用于 管理 poption "
+"的结余，结算和行权。"
 msgstr ""
 
 #: ../../source/introduction.rst:11
-msgid "poption 自动做市商，它是一种 **常函数自动做市商** ，用于 poption 之间的交易。"
+msgid ""
+":ref:`poption 自动做市商<auto_market_maker>`，它是一种 **常函数自动做市商** ，用于 poption "
+"之间的交易。"
 msgstr ""
 
 #: ../../source/introduction.rst:13
-msgid "下图是自定义 poption 曲线的几个例子，绿线是poption自定义的收益曲线。"
+msgid "下图是自定义 poption 曲线的几个例子，**绿线** 是poption自定义的收益曲线。"
 msgstr ""
 
 #: ../../source/introduction.rst:18
@@ -86,3 +90,33 @@ msgstr ""
 #: ../../source/introduction.rst:37
 msgid ":ref:`settle`"
 msgstr ""
+
+#~ msgid "poption 智能合约，它是一种 **ERC1155 协议** ，用于 管理 poption 的结余，结算和行权。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`poption 智能合约<_poption_contract>`，它是一种 **ERC1155 "
+#~ "协议** ，用于 管理 poption 的结余，结算和行权。"
+#~ msgstr ""
+
+#~ msgid "poption 自动做市商，它是一种 **常函数自动做市商** ，用于 poption 之间的交易。"
+#~ msgstr ""
+
+#~ msgid "下图是自定义 poption 曲线的几个例子，绿线是poption自定义的收益曲线。"
+#~ msgstr ""
+
+#~ msgid "下图是自定义 poption 曲线的几个例子，:green:`**绿线**`是poption自定义的收益曲线。"
+#~ msgstr ""
+
+#~ msgid "下图是自定义 poption 曲线的几个例子，**:green:`绿线`** 是poption自定义的收益曲线。"
+#~ msgstr ""
+
+#~ msgid "下图是自定义 poption 曲线的几个例子，:green:`**绿线**` 是poption自定义的收益曲线。"
+#~ msgstr ""
+
+#~ msgid "下图是自定义 poption 曲线的几个例子，:green:`绿线` 是poption自定义的收益曲线。"
+#~ msgstr ""
+
+#~ msgid "下图是自定义 poption 曲线的几个例子，:red:`绿线` 是poption自定义的收益曲线。"
+#~ msgstr ""
+

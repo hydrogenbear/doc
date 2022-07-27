@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg97080"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="covered_call_vs_poption.svg"
+   inkscape:export-filename="/home/jiecheng/Pictures/poption/diagram.png"
+   inkscape:export-xdpi="144"
+   inkscape:export-ydpi="144"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview97082"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-grids="true"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="274.24999"
+     inkscape:cy="305.74999"
+     inkscape:window-width="1846"
+     inkscape:window-height="1016"
+     inkscape:window-x="74"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs97077" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#008000;stroke:none;stroke-width:0.243548"
+       d="M 192.6468,67.942287 V 116.65328 H 48.012597 c 1.361853,-3.74106 4.617793,-7.22613 7.123115,-10.18955 7.562269,-8.944924 17.627711,-15.478161 28.200089,-19.882033 20.188169,-8.408859 42.199529,-12.054578 63.724969,-14.455707 15.14793,-1.689725 30.3739,-3.503563 45.58603,-4.183703 z"
+       id="path101211" />
+    <path
+       style="fill:#ff5555;stroke-width:0.240993"
+       d="M 11.33255,85.912319 V 55.171356 l 90.63326,0.0616 90.63328,0.0615 0.0634,6.229566 c 0.0349,3.426257 -0.0213,6.317042 -0.12474,6.423966 -0.10352,0.106924 -3.97316,0.476425 -8.59922,0.821106 C 124.13228,73.225138 91.918587,80.122269 71.32004,92.881345 62.549127,98.314194 55.021382,105.73808 49.38882,114.51 l -1.376223,2.14328 H 29.672573 11.33255 Z"
+       id="path101906" />
+    <path
+       style="fill:#2e87ff;fill-opacity:1;stroke-width:0.15791"
+       d="m 11.3513,55.188287 c -0.08565,-0.06132 -0.08969,-0.15875 -0.009,-0.216519 0.09472,-0.0678 4.539081,-0.105923 12.536994,-0.107539 6.814648,-0.0012 12.809324,-0.04551 13.321507,-0.09806 2.476926,-0.254164 3.813711,-1.25883 5.333399,-4.008329 1.014187,-1.83492 1.892309,-4.168301 3.945425,-10.483965 2.765502,-8.507039 3.637043,-10.381936 5.166537,-11.114485 1.149745,-0.550672 2.234907,-0.111072 3.278815,1.328246 1.018626,1.404456 1.551269,2.498038 4.006723,8.226313 3.575385,8.340926 5.014823,10.773787 7.771789,13.135504 1.848399,1.583408 4.076888,2.396097 7.63806,2.785466 1.43284,0.156661 6.737708,0.452482 59.839331,0.481692 1.94777,0.201185 57.42624,0.135554 58.41823,0.177848 l -58.10426,-0.03728 c -38.615737,0.0728 -80.051104,-0.02318 -110.013048,0.0099 -8.969595,0.02263 -13.022844,-0.0016 -13.130499,-0.07877 z"
+       id="path102813"
+       sodipodi:nodetypes="ssccsssssssccccss" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.202814;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 53.906977,21.552122 c 0,91.953438 0.0029,95.167988 0.0029,95.167988"
+       id="path210275" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.202814;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 36.554453,21.532937 c 0,91.927913 -0.03475,95.116023 -0.03475,95.116023"
+       id="path210273" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.202814;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 76.222572,21.554661 c 0,92.032459 -0.01194,95.224199 -0.01194,95.224199"
+       id="path103471-1-8" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.262247"
+       id="rect106434"
+       width="188.33199"
+       height="0.10447612"
+       x="7.0080976"
+       y="90.00798"
+       rx="1.3991151"
+       ry="0.013490439" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.262247"
+       id="rect106434-2"
+       width="188.33199"
+       height="0.10447612"
+       x="6.9048939"
+       y="54.981064"
+       rx="1.3991151"
+       ry="0.013490439" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:0.7,0.7;stroke:#f6e50b;stroke-opacity:1;stroke-dashoffset:0"
+       id="rect107517"
+       width="39.842796"
+       height="26.639193"
+       x="36.519703"
+       y="90.009773"
+       rx="0.44799405"
+       ry="0.53976065" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.53583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.113396"
+       x="31.064257"
+       y="122.58723"
+       id="text120121"
+       transform="scale(0.99066644,1.0094215)"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.113396"
+         x="31.064257"
+         y="124.24387"
+         id="tspan159873">First</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.113396"
+         x="31.064257"
+         y="129.91365"
+         id="tspan217015">Strike</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.53583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.113396"
+       x="47.006863"
+       y="122.13284"
+       id="text120121-7"
+       transform="scale(0.99066644,1.0094215)"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.113396"
+         x="47.006863"
+         y="122.13284"
+         id="tspan159873-9">current</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.113396"
+         x="47.006863"
+         y="127.80263"
+         id="tspan210497">price</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.53583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.113396"
+       x="74.071068"
+       y="122.76672"
+       id="text120121-2"
+       transform="scale(0.99066644,1.0094215)"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.113396"
+         x="74.071068"
+         y="124.42336"
+         id="tspan159873-0">Last</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.113396"
+         x="74.071068"
+         y="130.09315"
+         id="tspan220011">Strike</tspan></text>
+    <path
+       style="fill:none;stroke:#e8a3ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 11.33255,116.65328 h 36.680045 c 3.685747,-5.48343 6.639752,-9.95196 11.485869,-14.54813 2.669524,-2.685148 5.163133,-4.631723 8.31676,-6.835419 3.642385,-2.69523 5.367019,-3.715005 8.547277,-5.259959 l 116.345879,0.02941 0.10291,0.140341"
+       id="path170437"
+       sodipodi:nodetypes="ccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.25458px;line-height:0.85;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.106365"
+       x="-32.386703"
+       y="82.732597"
+       id="text180128"
+       transform="scale(0.92051771,1.0863452)"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.106365"
+         x="-32.386703"
+         y="83.4356"
+         id="tspan15582"
+         dy="-0.018447543">Poption Collateral</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.106365"
+         x="-32.386703"
+         y="87.051994"
+         id="tspan27441">Level in Underlying Asset</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.25458px;line-height:0.85;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.106365"
+       x="-31.072403"
+       y="50.427013"
+       id="text180128-36"
+       transform="scale(0.92051771,1.0863452)"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.106365"
+         x="-31.072403"
+         y="51.130016"
+         id="tspan15582-7">Covered Call Collateral</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.106365"
+         x="-31.072403"
+         y="54.74641"
+         id="tspan27441-5">Level in Underlying Asset</tspan></text>
+  </g>
+</svg>

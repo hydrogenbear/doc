@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, poption.org
+# This file is distributed under the same license as the poption package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poption \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-27 14:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/acc-application.rst:4
+msgid ""
+"General-purpose derivatives and its AMM on EVM chains. The derivatives "
+"are like European option but designed to be more blockchain native."
+msgstr ""
+
+#: ../../source/acc-application.rst:6
+msgid ""
+"We have combined the Black-Scholes model and CFMM to make an auto market "
+"maker suitable to derivatives. We also designed a new kind of derivative "
+"that can make a single auto market maker providing different derivatives."
+msgstr ""
+
+#: ../../source/acc-application.rst:8
+msgid ""
+"Poption is the name of the new kind of derivative. The name comes from "
+"'payoff-', 'predict-', and 'popular-' option. Poption is a safe, general "
+"purpose, and capital efficient financial derivative designed for "
+"blockchain. It is a fully distributed financial product. Poption can "
+"provide users with a variety of financial services that were previously "
+"unavailable or too risky, such as hedging risks, speculation, etc."
+msgstr ""
+
+#: ../../source/acc-application.rst:10
+msgid ""
+"A poption market maker will use information from both the spot market and"
+" the derivatives market to avoid being arbitrated. The poption market "
+"maker uses the spot market price as a free source of information, and "
+"integrate the information to the price of payoff tokens via Black-Scholes"
+" model and auto market maker algorithm. The market maker also preserves "
+"the information provided by the poption trader through the balances of "
+"liquidity pool. This make the poption market both simple as a CFMM and "
+"powerful to trade derivatives. One transaction of the swap cost from "
+"400,000 to 700,000 gas."
+msgstr ""
+
+#: ../../source/acc-application.rst:12
+msgid ""
+"I am a solo developer. I was a staff expert in data science in a finance "
+"company."
+msgstr ""
+
+#: ../../source/acc-application.rst:14
+msgid ""
+"https://www.poption.exchange/ https://github.com/Poption-DeFi/poption-"
+"contract https://www.poption.exchange/whitepaper/Poption_Whitepaper.pdf "
+"https://docs.poption.exchange/en/index.html "
+"https://www.poption.exchange/poption/0x0d166fd1 "
+"https://polygonscan.com/tx/0xac2e4dbb05c4a2947642944269079e29bce59ee2ee4667d0bd948f616686f9c5"
+msgstr ""
+
+#: ../../source/acc-application.rst:16
+msgid "CoinMarketCap"
+msgstr ""
+
+#: ../../source/acc-application.rst:18
+msgid "Binance 20,081,029,271 41,784,387,685"
+msgstr ""
+
+#: ../../source/acc-application.rst:19
+msgid "20,032,620,892 39,861,364,219   11,094,780,956 27,470,430,680"
+msgstr ""
+
+#: ../../source/acc-application.rst:20
+msgid "Uniswap    870,251,440"
+msgstr ""
+
+#: ../../source/acc-application.rst:21
+msgid "874,543,959                  554,133,233"
+msgstr ""
+
+#: ../../source/acc-application.rst:23
+msgid "dydx                      515,346,827"
+msgstr ""
+
+#: ../../source/acc-application.rst:23
+msgid "537,439,343  415,837,939"
+msgstr ""
+
+#: ../../source/acc-application.rst:25
+msgid ""
+"binance_futures-trading-volume-1-year.csv 22831.203919214437 binance-"
+"trading-volume-1-year.csv 7526.618265491752 uniswap-trading-"
+"volume-1-year.csv 635.178247854084 dydx_perpetual-trading-"
+"volume-1-year.csv 634.329985176968"
+msgstr ""
+
+#: ../../source/acc-application.rst:35
+msgid "Binance 7526.61   22831.20 Uniswap  635.17 dydxi               634.32"
+msgstr ""
+

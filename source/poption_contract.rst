@@ -4,6 +4,23 @@ poption合约概述
 ================
 在了解一些poption的应用场景之后我们可以回过头在来更进一步了解一下poption合约。
 
+Brief Understanding with Example
+----------------------------------
+To get a Poption with some financial function. We usually take two steps.
+
+1. Mint current asset to all possible returns in the future.
+2. Swap some possible returns for other possible returns with the other.
+
+.. figure:: ../images/ab_bet.png
+    :align: center
+
+    Alice and Bob bet with the Ether's price. (Poption only support continuous payoff function currently.)
+
+.. figure:: ../images/ab_long.png
+    :align: center
+
+    Alice make a bull spread on Ether and Bob make a bear spread.
+
 Poption的属性
 ------------------------
 Potpion智能中有三个重要属性，底层资产、结算货币、到期时间。在poption在到期时，poption智能合约会从预言机中获取当前底层资产价格作为结算价格。在poption到期后，持有人可以行权，当他们行权时，智能合约会将结算价格代入持有者的收益曲线函数中，并将对应函数输出值的结算货币转入持有者账户中。
@@ -89,4 +106,18 @@ Poption的收益函数代表着poption持有人在智能合约中所拥有的资
 
 .. figure:: ../images/balance_1.png
     :alt: balance
+    :align: center
+
+Capital Efficiency Discussion
+-------------------------------------
+Unlike option, fully collateralized poption is capital efficient. Here is an example shows how this works.
+
+Here is a diagram to show the example. The blue area shows the probability of the price of the underlying assert to be at the expiration time. The green area represents the payoff denominated in the underlying asset of one share of call option. The right side means higher price and the left side means lower price. Three vertical lines indicate the first slot of the poption, the current price and the last slot of the poption.
+
+Think about the right area that represents settle price being higher than the last slot. This is very unlikely to happen. So the option write is very unlikely to pay the option holder the green area above the purple line. There are two ways the write can choose from. First one is to be fully collateralized (covered call). But it is capital inefficient. Second one is to be undercollateralized. It is capital efficient but the writer can be squeezed and liquidated. It is clear that these unlikely events introduce inefficiency or complicity to the system.
+
+However poption whose payoff is the purple line, does not has this problems. It is both capital efficient and fully collateralized.
+In poption, we highly focus on the events and financial need in the golden box. This makes poption to be an efficient and powerful tool.
+
+.. image:: ../images/covered_call_vs_poption.png
     :align: center
